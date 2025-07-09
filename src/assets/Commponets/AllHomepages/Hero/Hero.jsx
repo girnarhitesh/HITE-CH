@@ -16,8 +16,7 @@ const Hero = () => {
                                 <div class="hero-badge">ESTABLISHED 1996</div>
 
                                 <h1 class="hero-title">
-                                    We are &nbsp;
-                                    <span class="hero-title-highlight" style={{color:"red"}}>Hitech</span>
+                                    We are &nbsp;<span class="hero-title-highlight">Hitech</span>
                                 </h1>
 
                                 <div class="hero-title-underline"></div>
