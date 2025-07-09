@@ -12,7 +12,7 @@ const Hero = () => {
                     <div class="hero-container">
                         <div class="hero-content">
 
-                            <div class="hero-text">
+                          <div class="hero-text">
                                 <div class="hero-badge">ESTABLISHED 1996</div>
 
                                 <h1 class="hero-title">
