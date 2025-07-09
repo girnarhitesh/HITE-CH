@@ -1,0 +1,80 @@
+.awards-header {
+    margin-top: 8vh;
+}
+
+.Aword-container-section p {
+    width: 120vh;
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.Aword-img-container img {
+    width: 100%;
+}
+.img-Aword-container-section img{
+   width: 100%;
+}
+.privew-img-container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr; 
+    justify-content: center; 
+}
+
+.privew-img-container-card {
+    border: 1px solid #eae0e0; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    background-color: #fff; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.privew-img-container-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
+}
+
+
+.privew-img-container-card .ant-image {
+    margin-bottom: 15px; 
+    max-width: 100%; 
+    height: auto; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.privew-img-container-card .ant-image-img {
+    width: 200px; 
+    height: 150px; 
+    object-fit: contain; 
+    border-radius: 5px; 
+}
+
+.privew-img-container-card p {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px; 
+    line-height: 1.3;
+    flex-grow: 0; 
+    flex-shrink: 0; 
+}
+.privew-img-container-card span {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    flex-grow: 1; 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-height: 4.5em; 
+}

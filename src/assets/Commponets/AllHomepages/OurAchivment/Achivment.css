@@ -1,0 +1,142 @@
+.achievement-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.achievement-header h1 {
+    font-weight: bold;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    /* gap: 30px; */
+}
+
+.achievement-card {
+    background: #fff;
+    padding: 30px 20px;
+    border: 1px solid rgb(232, 224, 224);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-left: none;
+    border-top: none;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+}
+
+.achievement-card img {
+    width: 14vh;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.achievement-card p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #222;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+
+/* our project  */
+/* OurProjects.css */
+
+/* Main Section */
+.our-projects-outer-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* Section Title */
+.section-title-container {
+    text-align: justify;
+    margin-bottom: 1rem;
+
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Grid for Projects */
+.projects-grid {
+    display: flex;
+    /* Equivalent to grid */
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+
+/* Project Card */
+.project-card {
+    width: 40vh;
+    /* max-width: 24rem; */
+    background-color: #ffffff;
+    /* border-radius: 1rem; */
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    transition: all 300ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.project-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    /* Equivalent to hover:shadow-lg */
+    transform: translateY(-0.5rem);
+    /* Equivalent to hover:-translate-y-2 */
+}
+
+/* Icon Wrapper inside card */
+.project-card-icon-wrapper {
+    margin-bottom: 1rem;
+    color: #1d4ed8;
+    transition: color 300ms ease-in-out;
+}
+
+.project-card-icon-wrapper svg {
+    font-size: 2.5rem;
+    color: #0D2E61;
+}
+
+.project-card-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: color 300ms ease-in-out;
+    font-family: Raleway, sans-serif;
+}

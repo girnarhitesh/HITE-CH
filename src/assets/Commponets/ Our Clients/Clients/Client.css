@@ -1,0 +1,120 @@
+.clients-sectoin-container-contant {
+    margin-top: 8vh;
+}
+
+.client-section-wrapper {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.clients-section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.clients-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.clients-description {
+    max-width: 700px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.Clients-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+}
+
+.client-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    max-width: 150px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.client-img-wrapper:hover {
+    transform: translateY(-3px);
+}
+
+.client-logo {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.client-img-wrapper:hover .client-logo {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
+@media (min-width: 576px) {
+    .Clients-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .client-img-wrapper {
+        height: 110px;
+    }
+}
+
+@media (min-width: 768px) {
+    .Clients-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+
+    }
+
+    .client-img-wrapper {
+        height: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .Clients-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    .client-img-wrapper {
+        height: 130px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Clients-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .client-img-wrapper {
+        height: 140px;
+    }
+}
+
+.testomonial-sectio-container {
+    margin-bottom: 2vh;
+}
+
+.ant-collapse-content-box {
+    font-size: 18px;
+    width: 100%;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: Raleway, sans-serif;
+}
+
+.ant-collapse-header-text {
+    font-size: 20px;
+}
