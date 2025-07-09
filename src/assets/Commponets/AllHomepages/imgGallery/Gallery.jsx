@@ -86,37 +86,37 @@ function Gallery() {
 
 
     return (
-        <>        <section className="gallery-section-wrapper"> {/* Added a wrapper class for potential overall section styling */}
-            <Row className="justify-content-center">
-
-                <Col xs={12} md={10} lg={10}>
-                    <div className="sectionpadding">
-                        <div className="img-gallery-section-container">
-                            <div className="img-gallery-container">
-                                {/* Corrected map arguments: (item, index) */}
-                                {Galleryitem.map((item, index) => (
-                                    <div key={index} className="img-container-gallery">
-                                        <img
-                                            src={item.img}
-                                            alt={item.title || "Gallery Image"} // Use title for alt, fallback
-                                            className="gallery-image" // Add a class for image specific styling
-                                        />
-                                        <div className="gallery-info"> {/* Wrapper for text content */}
-                                            {item.title && <p className="gallery-title">{item.title}</p>} {/* Only render if title exists */}
-                                            {item.description && <span className="gallery-description">{item.description}</span>} {/* Only render if description exists */}
+        <>
+            <section > {/* Added a wrapper class for potential overall section styling */}
+                <Row >
+                    <Col xs={12} md={10} lg={10}>
+                        <div className="sectionpadding">
+                            <div className="img-gallery-section-container">
+                                <div className="img-gallery-container">
+                                    {/* Corrected map arguments: (item, index) */}
+                                    {Galleryitem.map((item, index) => (
+                                        <div key={index} className="img-container-gallery">
+                                            <img
+                                                src={item.img}
+                                                alt={item.title || "Gallery Image"} // Use title for alt, fallback
+                                                className="gallery-image" // Add a class for image specific styling
+                                            />
+                                            <div className="gallery-info"> {/* Wrapper for text content */}
+                                                {item.title && <p className="gallery-title">{item.title}</p>} {/* Only render if title exists */}
+                                                {item.description && <span className="gallery-description">{item.description}</span>} {/* Only render if description exists */}
+                                            </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </Col>
-            </Row>
-        </section>
+                    </Col>
+                </Row>
+            </section>
 
-            <section className="our-values-section-wrapper">
-                <Row className="justify-content-center">
-                    <Col xs={12} lg={10}>
+            <section>
+                <Row >
+                    <Col xs={12} lg={10} >
                         {/* sectionpadding div added back as per your input */}
                         <div className="sectionpadding">
                             <div className="our-values-content-container">

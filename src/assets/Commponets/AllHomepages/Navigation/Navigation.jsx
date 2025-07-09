@@ -87,9 +87,9 @@ function Navigation() {
                 </ul>
 
                 {/* Get Quote Button */}
-                <div className="nav-actions">
+                {/* <div className="nav-actions">
                     <a href="/quote" className="quote-btn">Contact</a>
-                </div>
+                </div> */}
 
                 {/* Hamburger Menu */}
                 <div

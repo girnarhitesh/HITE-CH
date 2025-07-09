@@ -53,7 +53,7 @@ function Achivment() {
 
     return (
         <>
-            <section className="achievement-section sectionpadding">
+            <section >
                 <div className="achievement-header">
                     <h1>Our Achievements</h1>
                 </div>
@@ -79,7 +79,7 @@ function Achivment() {
                 <Row>
                     <Col lg={12}>
                         <div className="sectionpadding">
-                            <section className="our-projects-outer-section">
+                            <section >
                                 <div
                                     className="background-sketch"
                                     style={{

@@ -94,21 +94,18 @@ function Client() {
 
     return (
         <>
-            <section className="client-section-wrapper"> {/* Added a wrapper class for section styling */}
+            <section className="client-section-wrapper">
                 <Row className="justify-content-center">
-                    {/* Adjusted Col sizing for typical usage, assuming you want a centered content block */}
-                    {/* lg={12} means it takes full width of the row on large screens */}
-                    <Col xs={12} lg={10}> {/* Use lg={10} if you want it narrower and centered by justify-content-center on the Row */}
-                        <div className="sectionpadding"> {/* Changed to hyphen-case for consistency */}
-                            <div className="clients-section-header"> {/* Renamed for clarity */}
+                    <Col xs={12} lg={10}>
+                        <div className="sectionpadding">
+                            <div className="clients-section-header">
                                 <h1 className="clients-title">Our Clients</h1>
                                 <p className="clients-description">We work closely with a wide range of clients from different sectors and regions. These are just some of the people we're proud to work with:</p>
                             </div>
-                            <div className="Clients-grid-container"> {/* Renamed for clarity and grid styling */}
-                                {/* Corrected map arguments: (item, index) */}
+                            <div className="Clients-grid-container">
                                 {Clientsitem.map((item, index) => (
-                                    <div key={index} className="client-img-wrapper"> {/* Renamed for clarity */}
-                                        <img src={item.img} alt={item.alt || "Client Logo"} className="client-logo" /> {/* Added class for image styling */}
+                                    <div key={index} className="client-img-wrapper"> 
+                                        <img src={item.img} alt={item.alt || "Client Logo"} className="client-logo" /> 
                                     </div>
                                 ))}
                             </div>
@@ -124,7 +121,7 @@ function Client() {
                             <h1>Testimonials</h1>
                         </div>
                     </div>
-                     <Collapse items={items} defaultActiveKey={['1']} />
+                    <Collapse items={items} defaultActiveKey={['1']} />
                 </div>
             </section>
         </>
