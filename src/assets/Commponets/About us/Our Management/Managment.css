@@ -1,0 +1,18 @@
+.Managment-section {
+    margin-top: 8vh;
+}
+
+.Managment-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.Managment-img-container img {
+    width: 50vh;
+}
+.IMg-section-container-contant span{
+    width: 70vh;
+}
