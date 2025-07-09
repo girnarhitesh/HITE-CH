@@ -10,11 +10,37 @@
     letter-spacing: 1px;
 }
 
-.Aword-img-container img {
-    width: 100%;
+.img-Aword-container-section {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.award-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-flash-overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease-in-out;
+  pointer-events: none;
 }
 .img-Aword-container-section img{
-   width: 100%;
+    width: 100%;
+}
+
+.img-Aword-container-section:hover .img-flash-overlay {
+  left: 120%;
 }
 .privew-img-container {
     display: grid;
@@ -77,4 +103,11 @@
     overflow: hidden;
     text-overflow: ellipsis; 
     max-height: 4.5em; 
+}
+.awards-description{
+    /* width: 120vh; */
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 1vh;
+    display: flex;
 }

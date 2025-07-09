@@ -16,7 +16,8 @@ function Awords() {
                         </div>
                         <div>
                             <div className="img-Aword-container-section">
-                                <img src="https://www.hitechprojects.co.in/Sources/images/awards/4.png" alt="" />
+                                <img src="https://www.hitechprojects.co.in/Sources/images/awards/4.png" alt="Award Image" />
+                                <div className="img-flash-overlay"></div>
                             </div>
                             <div className="privew-img-container">
                                 <div className='privew-img-container-card'>
