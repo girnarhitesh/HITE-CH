@@ -49,10 +49,12 @@
     margin-bottom: 10px;
     color: rgb(0, 0, 0);
 }
-.hero-year img{
+
+.hero-year img {
     width: 70vh;
     height: 70vh;
 }
+
 .hero-title-highlight {
     background: linear-gradient(#041c40);
     -webkit-background-clip: text;
@@ -155,108 +157,70 @@
     font-weight: bold;
     font-size: 12px;
 }
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5vh;
+    padding: 20px;
+  }
 
+  .hero-content {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .hero-content {
-        grid-template-columns: 1fr;
-        gap: 48px;
-    }
+  .hero-text {
+    padding: 0;
+  }
 
-    .hero-text {
-        order: 2;
-    }
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
 
-    .hero-visual {
-        order: 1;
-    }
+  .hero-year img {
+    width: 90vw;
+    height: auto;
+    max-height: 400px;
+  }
 
-    .hero-title {
-        font-size: 3rem;
-    }
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
 
-    .hero-image-container {
-        width: 300px;
-        height: 300px;
-    }
+  .hero-description p {
+    line-height: 22px;
+    font-size: 15px;
+  }
 
-    .hero-icon {
-        width: 100px;
-        height: 100px;
-        font-size: 40px;
-    }
-}
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 32px;
+  }
 
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 0 16px;
-    }
+  .btn-primary,
+  .btn-secondary {
+    width: 80%;
+    padding: 12px 24px;
+    font-size: 15px;
+  }
 
-    .hero-title {
-        font-size: 2.5rem;
-    }
+  .certifications {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding-top: 20px;
+  }
 
-    .hero-description {
-        font-size: 16px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .btn-primary,
-    .btn-secondary {
-        width: 100%;
-        text-align: center;
-        padding: 14px 24px;
-    }
-
-    .certifications {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .hero-image-container {
-        width: 250px;
-        height: 250px;
-    }
-
-    .bg-shape-1,
-    .bg-shape-2,
-    .bg-shape-3 {
-        display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-description {
-        font-size: 14px;
-    }
-
-    .hero-image-container {
-        width: 200px;
-        height: 200px;
-    }
-
-    .hero-icon {
-        width: 80px;
-        height: 80px;
-        font-size: 32px;
-    }
-
-    .hero-year h3 {
-        font-size: 24px;
-    }
-}
-@media(max-width:900px){
-    .hero-content{
-        display: flex;
-        flex-direction: column;
-    }
+  .cert-item {
+    justify-content: center;
+  }
 }

@@ -5,9 +5,13 @@ import { Row, Col } from "antd"
 const Hero = () => {
     return (
         <>
-            <Row>
-                <Col lg={12} sm={16} md={24}>
+        
                     <section class="hero-section">
+                        <Row>
+                            <Col>
+                            
+                            </Col>
+                        </Row>
                         <div className="sectionpadding">
                             <div class="bg-shape-1"></div>
                             <div class="bg-shape-2"></div>
@@ -54,8 +58,7 @@ const Hero = () => {
                             </div>
                         </div>
                     </section>
-                </Col>
-            </Row>
+          
 
         </>
     )
