@@ -1,8 +1,11 @@
 import React from 'react';
 import { TrendingUp, Database, BarChart3, Shield } from 'lucide-react';
 import { FaHandHoldingHeart } from "react-icons/fa";
-import "./ourvalue.css"
-
+import Slider from 'react-slick';
+import { Row, Col } from 'antd';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./ourvalue.css";
 
 const CoreValues = () => {
     const values = [
@@ -28,7 +31,7 @@ const CoreValues = () => {
             id: 4,
             icon: <BarChart3 className="w-8 h-8" />,
             title: "ACCOUNTABILITY",
-            description: "Each and every one of us is willing to accept and own our individual responsibilities and account for our actions. At the same time we ensure that collectively as a team we hold each and every member of the team responsible for their actions towards achievement of common goals."
+            description: "Each and every one of us is willing to accept and own our individual responsibilities and account for our actions. At the same time we ensure that collectively as a team, we hold each and every member of the team responsible for their actions towards achievement of common goals."
         },
         {
             id: 5,
@@ -38,69 +41,69 @@ const CoreValues = () => {
         }
     ];
 
-    return (
-        <>
-            <div className="core-values-container">
-                <div className="sectionpadding">
-                    <div className="floating-shapes">
-                        <div className="floating-shape"></div>
-                        <div className="floating-shape"></div>
-                        <div className="floating-shape"></div>
-                    </div>
+    const sliderSettings = {
+        dots: false,             // ✅ No dots
+        arrows: false,           // ✅ No arrows
+        infinite: true,
+        speed: 800,              // ✅ Smooth transition
+        slidesToShow: 3,         // ✅ One slide at a time
+        slidesToScroll: 1,
+        autoplay: true,          // ✅ Auto slide
+        autoplaySpeed: 3500,     // ✅ Speed for autoplay
+        pauseOnHover: false,
+        cssEase: 'ease-in-out',  // ✅ Smooth easing
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: { slidesToShow: 1 }
+            },
+            {
+                breakpoint: 768,
+                settings: { slidesToShow: 1 }
+            }
+        ]
+    };
 
-                    <div >
-                        {/* Header Section */}
-                        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                            <h1 className="main-title">
-                                Our Core Values
-                            </h1>
-                            <div >
-                                <p className="main-description">
-                                    Our core values define who we are and what we stand for as a company. Value-driven companies achieve better brand and business performance. Our core values form an integral part of our work culture, giving our clients a unique experience of trust. We have built our company around following 5 core values.
-                                </p>
-                            </div>
+    return (
+        <div className="core-values-container">
+            <div className="sectionpadding">
+                <Row>
+                    <Col >
+                        <div className="floating-shapes">
+                            <div className="floating-shape"></div>
+                            <div className="floating-shape"></div>
+                            <div className="floating-shape"></div>
                         </div>
 
-                        {/* Values Grid */}
-                        <div className="values-grid">
+                        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+                            <h1 className="main-title">Our Core Values</h1>
+                            <p className="main-description">
+                                Our core values define who we are and what we stand for as a company. Value-driven companies achieve better brand and business performance. Our core values form an integral part of our work culture, giving our clients a unique experience of trust. We have built our company around following 5 core values.
+                            </p>
+                        </div>
+
+                        <Slider {...sliderSettings}>
                             {values.map((value, index) => (
-                                <div
-                                    key={value.id}
-                                    className={`value-card ${index === 2 ? 'caring-card' : ''}`}
-                                    tabIndex={0}
-                                    role="article"
-                                    aria-labelledby={`value-title-${value.id}`}
-                                >
-                                    {/* Icon */}
-                                    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
-                                        <div className="value-icon">
-                                            <div style={{ color: '#1e40af' }}>
-                                                {value.icon}
-                                            </div>
+                                <div key={value.id} className="value-card-slide">
+                                    <div
+                                        className={`value-card-ourvalue ${index === 2 ? 'caring-card' : ''}`}
+                                        tabIndex={0}
+                                        role="article"
+                                        aria-labelledby={`value-title-${value.id}`}
+                                    >
+                                        <div className="value-icon-wrapper">
+                                            <div className="value-icon">{value.icon}</div>
                                         </div>
+                                        <h3 id={`value-title-${value.id}`} className="value-title">{value.title}</h3>
+                                        <p className="value-description">{value.description}</p>
                                     </div>
-
-                                    {/* Title */}
-                                    <h3 id={`value-title-${value.id}`} className="value-title">
-                                        {value.title}
-                                    </h3>
-
-                                    {/* Description */}
-                                    <p className="value-description">
-                                        {value.description}
-                                    </p>
                                 </div>
                             ))}
-                        </div>
-
-                        {/* Bottom decoration */}
-                        <div style={{ marginTop: '4rem', display: 'flex', justifyContent: 'center' }}>
-                            <div className="decorative-line"></div>
-                        </div>
-                    </div>
-                </div>
+                        </Slider>
+                    </Col>
+                </Row>
             </div>
-        </>
+        </div>
     );
 };
 
