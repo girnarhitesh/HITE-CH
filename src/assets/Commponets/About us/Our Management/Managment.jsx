@@ -1,8 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+
 import "./Managment.css";
 import { Row, Col } from 'antd';
+import Ourvalue from '../Our value/Ourvalue';
 
 function Managment() {
+
+    const [visibleItems, setVisibleItems] = useState([]);
+    const [activeLevel, setActiveLevel] = useState(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const itemIndex = parseInt(entry.target.dataset.index);
+                        setVisibleItems(prev => [...new Set([...prev, itemIndex])]);
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        const items = document.querySelectorAll('.hierarchy-item');
+        items.forEach((item) => observer.observe(item));
+
+        return () => observer.disconnect();
+    }, []);
+
+    const teamLevels = [
+        { id: 1, label: "TOP MANAGEMENT", color: "#e74c3c", width: "200px" },
+        { id: 2, label: "SUPPORTING STAFF", color: "#c0392b", width: "240px" },
+        { id: 3, label: "MANAGERS & ABOVE", color: "#8e44ad", width: "280px" },
+        { id: 4, label: "ENGINEERS & SUPERVISOR", color: "#3f51b5", width: "320px" },
+        { id: 5, label: "MACHINERY STAFF", color: "#1976d2", width: "360px" }
+    ];
     return (
         <>
             <Row>
@@ -57,6 +89,26 @@ function Managment() {
                     </section>
                 </Col>
             </Row>
+
+            <div className="sectionpadding">
+                <Row className='Our-team-Row'>
+                    <Col lg={12} sm={16} md={24}>
+                        <div className="our-team-container-section">
+                            <div className="our-team-container">
+                                <h1>Our Team</h1>
+                                <p>Sharing a common ethos of Service, Detail, Experience, Integrity and Quality with our clients, the Hitech team has been lauded for their collaborative spirit and individual excellence in construction, thought leadership and career advancement. Their role is pivotal to Hitech's current position and ongoing success.
+                                </p>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col lg={12} sm={16} md={24}>
+                        <div className="our-tema-img-container">
+                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/UpdatedTeamPoster.png" alt="" />
+                        </div>
+                    </Col>
+                </Row>
+            </div>
+            <Ourvalue/>
 
         </>
     )

@@ -24,7 +24,7 @@
     gap: 30px;
     align-items: flex-start;
     background-color: #ffffff;
-   border: 1px solid rgb(221, 217, 217);
+    border: 1px solid rgb(221, 217, 217);
     padding: 30px;
     border-radius: 10px;
     width: 100%;
@@ -81,4 +81,25 @@
     .IMg-section-container-contant {
         align-items: center;
     }
+}
+
+
+.Our-team-Row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+
+}
+
+.our-team-container p {
+    font-size: 1.3rem;
+    margin-top: 1vh;
+    line-break: anywhere;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.our-tema-img-container img {
+    width: 100%;
 }
