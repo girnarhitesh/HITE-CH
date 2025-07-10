@@ -17,3 +17,16 @@ p,span{
  font-weight: 300;
  letter-spacing: 1px;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://imgs.search.brave.com/_G--TwHlRBq5Jd6QU-AZWxCOGcCvDkMnnHM6GA4jM9A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hcmNoaXRlY3R1/cmFsLWRyYXdpbmct/d2l0aC1idWlsZGlu/Zy1jb25zdHJ1Y3Rp/b25fMTIwNTQyLTE4/NjIuanBnP3NlbXQ9/YWlzX2h5YnJpZCZ3/PTc0MA");
+  background-size: cover;              /* ✅ scale image to cover screen */
+  background-position: center center;  /* ✅ center it */
+  background-repeat: no-repeat;        /* ✅ no tiling */
+  background-attachment: fixed;        /* ✅ makes it stay during scroll */
+  background-blend-mode: overlay;      /* Optional: blend if you use a color */
+  font-family: sans-serif;
+}

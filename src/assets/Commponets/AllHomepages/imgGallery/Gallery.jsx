@@ -141,7 +141,7 @@ function Gallery() {
                                                 {item.icon}
                                             </div>
                                             <h3 className="value-name">{item.name}</h3>
-                                            <p className="value-description">{item.description}</p>
+                                            <p className="value-description-gallery">{item.description}</p>
                                             {item.button && ( // Only render button if it exists
                                                 // Replaced React-Bootstrap Button with a standard HTML <button>
                                                 <Link to="/"><button className="value-custom-button">
