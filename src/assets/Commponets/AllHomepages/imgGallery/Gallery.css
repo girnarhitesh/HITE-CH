@@ -221,3 +221,8 @@
     letter-spacing: 1px;
 
 }
+@media(max-width:900px){
+    .img-container-gallery{
+width: 50vh;
+    }
+}

@@ -1,7 +1,8 @@
-import React from 'react';
-import './Achivment.css';
+import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Row, Col } from 'react-bootstrap';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import './Achivment.css'; // Optional for custom styles
 import { FaHouseChimney, FaBuilding, FaIndustry, FaCity } from 'react-icons/fa6';
 
 function Achivment() {
@@ -50,28 +51,40 @@ function Achivment() {
         },
     ]
 
+    const sliderRef = useRef(null);
+
+    const scroll = (direction) => {
+        const { current } = sliderRef;
+        if (!current) return;
+        const scrollAmount = window.innerWidth < 768 ? 250 : 400;
+        direction === 'left'
+            ? (current.scrollLeft -= scrollAmount)
+            : (current.scrollLeft += scrollAmount);
+    };
 
     return (
         <>
             <section >
-                <div className="achievement-header">
-                    <h1>Our Achievements</h1>
-                </div>
+                <div className="sectionpadding">
+                    <div className="achievement-header">
+                        <h1>Our Achievements</h1>
+                    </div>
 
-                <div className="achievement-grid">
-                    {Achivmentitem.map((item, index) => (
-                        <motion.div
-                            className="achievement-card"
-                            key={index}
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                        >
-                            <img src={item.img} alt={item.name} />
-                            <p>{item.name}</p>
-                        </motion.div>
-                    ))}
+                    <div className="achievement-grid">
+                        {Achivmentitem.map((item, index) => (
+                            <motion.div
+                                className="achievement-card"
+                                key={index}
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                            >
+                                <img src={item.img} alt={item.name} />
+                                <p>{item.name}</p>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -79,23 +92,29 @@ function Achivment() {
                 <Row>
                     <Col lg={12}>
                         <div className="sectionpadding">
-                            <section >
-                                <div
-                                    className="background-sketch"
-                                    style={{
-                                        backgroundImage: "url('/path/to/your/background-sketch.png')", // Replace with your actual background image
-                                    }}
-                                ></div>
-
-                                <div className="content-wrapper">
-                                    <div className="section-title-container">
-                                        <h2 className="section-title">
+                            <section>
+                                <div className="content-wrapper relative">
+                                    <div className="section-title-container text-center mb-6">
+                                        <h2 className="section-title text-3xl font-bold">
                                             Our Projects
-                                            <span className="section-title-underline"></span>
+                                            <span className="section-title-underline block h-1 bg-orange-500 mt-2 w-20 mx-auto"></span>
                                         </h2>
                                     </div>
 
-                                    <div className="projects-grid">
+                                    {/* Slider Buttons (only visible on mobile) */}
+                                    <div className="slider-buttons md:hidden flex justify-between mb-4">
+                                        <button onClick={() => scroll('left')} className="text-xl p-2 bg-orange-500 text-white rounded-full shadow">
+                                            <FaChevronLeft />
+                                        </button>
+                                        <button onClick={() => scroll('right')} className="text-xl p-2 bg-orange-500 text-white rounded-full shadow">
+                                            <FaChevronRight />
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        className="projects-grid"
+                                        ref={sliderRef}
+                                    >
                                         {categories.map((category, index) => (
                                             <motion.div
                                                 key={index}
@@ -105,13 +124,10 @@ function Achivment() {
                                                 viewport={{ once: true, amount: 0.5 }}
                                                 className="project-card"
                                             >
-                                                <div className="project-card-icon-wrapper">
-                                                    {/* The actual icon component is passed here */}
+                                                <div className="project-card-icon-wrapper text-4xl text-orange-600 mb-3">
                                                     {category.icon}
                                                 </div>
-                                                <h3 className="project-card-title">
-                                                    {category.title}
-                                                </h3>
+                                                <h3 className="project-card-title font-semibold text-gray-700 text-lg">{category.title}</h3>
                                             </motion.div>
                                         ))}
                                     </div>
