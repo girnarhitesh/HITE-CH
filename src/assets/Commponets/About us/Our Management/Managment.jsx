@@ -55,7 +55,6 @@ function Managment() {
                             </div>
                         </div>
                     </section>
-
                 </Col>
             </Row>
 
@@ -63,4 +62,4 @@ function Managment() {
     )
 }
 
-export default Managment
+export default Managment;
