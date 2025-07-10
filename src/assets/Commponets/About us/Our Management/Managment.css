@@ -1,18 +1,84 @@
 .Managment-section {
+    width: 100%;
     margin-top: 8vh;
+}
+
+.Managment-section-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: justify;
+    margin-bottom: 40px;
+    color: #0D2E61;
+}
+
+
+.Managment-section-contant-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .Managment-img-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    background-color: #ffffff;
+   border: 1px solid rgb(221, 217, 217);
     padding: 30px;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .Managment-img-container img {
-    width: 50vh;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
-.IMg-section-container-contant span{
-    width: 70vh;
+
+.IMg-section-container-contant {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.IMg-section-container-contant h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0D2E61;
+}
+
+.IMg-section-container-contant p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    color: #333;
+}
+
+.IMg-section-container-contant span {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Responsive stacking on mobile */
+@media (max-width: 768px) {
+    .Managment-img-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Managment-img-container img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .IMg-section-container-contant {
+        align-items: center;
+    }
 }
