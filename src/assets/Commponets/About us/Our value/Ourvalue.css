@@ -44,10 +44,11 @@
 }
 
 .value-icon {
-    background: linear-gradient(45deg, #ffffff, #f8fafc);
+    background-color: #0d2e61;
     border-radius: 50%;
-    padding: 1rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    border: 1px solid black;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +64,7 @@
     text-align: center;
     margin: 1.5rem 0;
     letter-spacing: 0.5px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); */
 }
 
 .value-description {
@@ -193,7 +194,7 @@
     width: 40vh;
     text-align: center;
     flex: 1 1 30%;
-   border: 1px solid rgb(242, 231, 231);
+    border: 1px solid rgb(242, 231, 231);
 }
 
 .icon-box-container span svg {
@@ -201,20 +202,23 @@
     color: #0D2E61;
     margin-bottom: 15px;
 }
-.section-container-icon p{
-   width: 100vh;
-   font-size: 18px;
-   line-height: 25px;
-   letter-spacing: 1px;
-   margin-top: 2vh;
-   margin-bottom: 2vh;
+
+.section-container-icon p {
+    width: 100vh;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
-.icon-box-container h1{
+
+.icon-box-container h1 {
     font-size: 1.5rem;
     font-weight: 300;
     margin-bottom: 10px;
 }
-.icon-box-container p{
+
+.icon-box-container p {
     font-size: 17px;
     width: 100%;
     text-align: center;
