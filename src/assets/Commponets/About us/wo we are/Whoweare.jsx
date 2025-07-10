@@ -61,7 +61,13 @@ function Whoweare() {
             </section>
 
             <section>
-                
+                <div className="sectionpadding">
+                    <div className="our-vision-container">
+                        <span></span>
+                        <h1>Our VISION</h1>
+                        <p>To be the preferred destination for comprehensive construction solutions.</p>
+                    </div>
+                </div>
             </section>
         </>
     )
