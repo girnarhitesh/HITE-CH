@@ -29,7 +29,7 @@ function Navigation() {
             title: "About Us",
             link: "/about",
             sublink: [
-                { label: "Who We Are", link: "/who-we-are" },
+                { label: "Who We Are", link: "/whoweare" },
                 { label: "Our Management", link: "/management" },
                 { label: "Our Standards", link: "/standards" },
                 { label: "Awards & Certifications", link: "/awards" },

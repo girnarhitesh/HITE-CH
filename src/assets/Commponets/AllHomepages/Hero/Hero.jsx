@@ -7,11 +7,6 @@ const Hero = () => {
         <>
         
                     <section class="hero-section">
-                        <Row>
-                            <Col>
-                            
-                            </Col>
-                        </Row>
                         <div className="sectionpadding">
                             <div class="bg-shape-1"></div>
                             <div class="bg-shape-2"></div>

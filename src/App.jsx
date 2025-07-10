@@ -8,6 +8,7 @@ import Architect from './assets/Commponets/ Our Clients/Architect/Architect';
 import CSR from './assets/Commponets/About us/CSR/CSR';
 import Awords from './assets/Commponets/About us/Awords/Awords';
 import Managment from './assets/Commponets/About us/Our Management/Managment';
+import Whoweare from './assets/Commponets/About us/wo we are/Whoweare';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='csr' element={<CSR />} />
         <Route path='/awards' element={<Awords />} />
         <Route path='/management' element={<Managment />} />
+        <Route path='/whoweare' element={<Whoweare/>}/>
       </Routes>
     </BrowserRouter>
   );
