@@ -49,12 +49,10 @@
     margin-bottom: 10px;
     color: rgb(0, 0, 0);
 }
-
-.hero-year img {
+.hero-year img{
     width: 70vh;
     height: 70vh;
 }
-
 .hero-title-highlight {
     background: linear-gradient(#041c40);
     -webkit-background-clip: text;
@@ -254,5 +252,11 @@
 
     .hero-year h3 {
         font-size: 24px;
+    }
+}
+@media(max-width:900px){
+    .hero-content{
+        display: flex;
+        flex-direction: column;
     }
 }
