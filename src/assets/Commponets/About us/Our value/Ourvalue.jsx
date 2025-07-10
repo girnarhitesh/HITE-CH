@@ -1,5 +1,6 @@
 import React from 'react';
-import { TrendingUp, Database, Heart, BarChart3, Shield } from 'lucide-react';
+import { TrendingUp, Database, BarChart3, Shield } from 'lucide-react';
+import { FaHandHoldingHeart } from "react-icons/fa";
 import "./ourvalue.css"
 
 
@@ -19,7 +20,7 @@ const CoreValues = () => {
         },
         {
             id: 3,
-            icon: <Heart className="w-8 h-8" />,
+            icon: <FaHandHoldingHeart className="w-8 h-8" />,
             title: "CARING",
             description: "We feel genuine concern, kindness for others and express ourselves through caring actions. Even if we have to take tough decisions they are carried out in a manner that demonstrates our care and respect for the other person."
         },
