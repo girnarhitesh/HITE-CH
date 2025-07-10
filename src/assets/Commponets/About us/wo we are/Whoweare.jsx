@@ -3,6 +3,7 @@ import "./Whoweare.css"
 import Hero from '../../AllHomepages/Hero/Hero'
 import { motion } from 'framer-motion';
 import { Row, Col } from 'antd';
+import { Eye, Rocket } from 'lucide-react';
 
 function Whoweare() {
 
@@ -32,6 +33,7 @@ function Whoweare() {
             name: "Ongoing Projects 20+"
         },
     ];
+
     return (
         <>
 
@@ -60,12 +62,37 @@ function Whoweare() {
                 </div>
             </section>
 
-            <section>
-                <div className="sectionpadding">
-                    <div className="our-vision-container">
-                        <span></span>
-                        <h1>Our VISION</h1>
-                        <p>To be the preferred destination for comprehensive construction solutions.</p>
+            <section class="vision-mission-section">
+                <div class="section-container">
+                    <div class="vision-mission-row">
+                        <div class="vision-mission-col">
+                            <div class="vision-container">
+                                <div class="icon-wrapper vision-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <h2 class="section-title vision-title">Vision</h2>
+                                <p class="section-description vision-description">
+                                    To be the preferred destination for comprehensive construction solutions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="vision-mission-col">
+                            <div class="mission-container">
+                                <div class="icon-wrapper mission-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2L2 7v10c0 5.55 3.84 10 9 11 5.16-1 9-5.45 9-11V7z"></path>
+                                        <path d="M9 12l2 2 4-4"></path>
+                                    </svg>
+                                </div>
+                                <h2 class="section-title mission-title">Mission</h2>
+                                <p class="section-description mission-description">
+                                    We take pride in delivering reliable construction solutions with agility.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -73,4 +100,4 @@ function Whoweare() {
     )
 }
 
-export default Whoweare
+export default Whoweare;
