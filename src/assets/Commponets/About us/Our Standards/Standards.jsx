@@ -180,9 +180,8 @@ const Standards = () => {
 
             <section className="standards-section-wrapper">
                 <div className="sectionpadding">
-                    <Row className="justify-content-center"> {/* Center the column content */}
-                        <Col lg={12} sm={12} md={12}> {/* Adjust column sizes as needed for your overall layout */}
-                            {/* Optional: Section Title/Description */}
+                    <Row className="justify-content-center">
+                        <Col lg={12} sm={12} md={12}>
                             <div className="text-center mb-5">
                                 <h2>Our Safety Standards</h2>
                                 <p className="text-muted">Ensuring well-being and best practices on every site.</p>
@@ -208,14 +207,14 @@ const Standards = () => {
                 <div className="sectionpadding">
                     <Row>
                         <Col lg={12} sm={16} md={24}>
-                                <div className="Training-And-Development-section">
-                                    <div className="Training-devlopment-container">
-                                        <h1>Training And Development</h1>
-                                        <p>Focused on enhancing competence in technical, managerial and behavioral facets, Hitech regularly organizes training programs aimed at all levels of the organization. Our objective is to narrow the divide between existing proficiencies and the desired skill sets. We maintain that ongoing training and development are key to the continuous improvement of the organization's overall performance. This commitment to development not only benefits our internal team but also extends to fulfilling the expectations of our external customers.</p><br />
-                                        <p>In summary, we consider 'Training and Development' to be an endless journey towards excellence.</p> <br />
-                                        <span>“Training and Development is a continual improvement procedure”</span>
-                                    </div>
+                            <div className="Training-And-Development-section">
+                                <div className="Training-devlopment-container">
+                                    <h1>Training And Development</h1>
+                                    <p>Focused on enhancing competence in technical, managerial and behavioral facets, Hitech regularly organizes training programs aimed at all levels of the organization. Our objective is to narrow the divide between existing proficiencies and the desired skill sets. We maintain that ongoing training and development are key to the continuous improvement of the organization's overall performance. This commitment to development not only benefits our internal team but also extends to fulfilling the expectations of our external customers.</p><br />
+                                    <p>In summary, we consider 'Training and Development' to be an endless journey towards excellence.</p> <br />
+                                    <span>“Training and Development is a continual improvement procedure”</span>
                                 </div>
+                            </div>
                         </Col>
                         <Col lg={12} sm={16} md={24}>
                             <div className="Training-devlopment-img-section-container">
@@ -269,22 +268,18 @@ const Standards = () => {
                                     </div>
                                 </div>
 
-                                <div className="devlopment-img-container">
-                                    <div className="devlopment-img">
-                                        <img src="https://www.hitechprojects.co.in/Sources/images/standards/traning/6.jpg" alt="" />
+                                <div className="grid-image-layout">
+                                    <div className="grid-img"><img src="https://www.hitechprojects.co.in/Sources/images/standards/traning/6.jpg" alt="Top Left" /></div>
+
+                                    <div className="grid-img"><img src="https://www.hitechprojects.co.in/Sources/images/standards/traning/Inhouse%20Training.jpg" alt="Top Right" /></div>
+
+                                    <div className="grid-img center-img">
+                                        <img src="https://plus.unsplash.com/premium_photo-1681989496815-819ad68b80db?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29uc3RydWN0aW9uJTIwaW1nfGVufDB8fDB8fHww" alt="Center" />
                                     </div>
 
-                                    <div className="devlopment-img">
-                                        <img src="https://www.hitechprojects.co.in/Sources/images/standards/traning/Inhouse%20Training.jpg" alt="" />
-                                    </div>
+                                    <div className="grid-img"><img src="https://www.hitechprojects.co.in/Sources/images/standards/traning/9.jpg" alt="Bottom Left" /></div>
 
-                                    <div className="devlopment-img">
-                                        <img src="https://www.hitechprojects.co.in/Sources/images/standards/traning/8.jpg" alt="" />
-                                    </div>
-
-                                    <div className="devlopment-img">
-                                        <img src="https://www.hitechprojects.co.in/Sources/images/standards/traning/9.jpg" alt="" />
-                                    </div>
+                                    <div className="grid-img"><img src="https://www.hitechprojects.co.in/Sources/images/standards/safety/02%20Health%20checkup.jpeg" alt="Bottom Right" /></div>
                                 </div>
                             </div>
                         </Col>
