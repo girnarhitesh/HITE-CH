@@ -93,18 +93,16 @@
  }
 
  .vision-icon {
-     background: linear-gradient(145deg, #3b82f6, #2563eb);
+     background-color: #0D2E61;
      color: white;
-     box-shadow: 0 8px 32px rgba(59, 130, 246, 0.4);
      animation: pulseGlow 2s ease-in-out infinite;
      position: relative;
      overflow: hidden;
  }
 
  .mission-icon {
-     background: linear-gradient(145deg, #8b5cf6, #7c3aed);
+     background-color: #0D2E61;
      color: white;
-     box-shadow: 0 8px 32px rgba(139, 92, 246, 0.4);
      animation: gentleRotate 4s ease-in-out infinite;
  }
 
@@ -169,7 +167,7 @@
  }
 
  .mission-description {
-   color: #1e40af;
+     color: #1e40af;
      font-weight: 500;
  }
 
@@ -297,5 +295,216 @@
          background: white;
          box-shadow: none;
          border: 1px solid #e5e7eb;
+     }
+ }
+.strengths-wrapper {
+    width: 100%;
+    background: 
+        linear-gradient(135deg,
+            rgba(17, 24, 39, 0.9) 0%,       /* Dark start */
+            rgba(55, 65, 81, 0.8) 50%,      /* Medium in middle */
+            rgba(17, 24, 39, 0.9) 100%),    /* Dark end */
+        url('https://images.unsplash.com/photo-1532562145520-b8cce2486cd2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fGNvbnN0cnVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    color: white; /* Optional for better contrast */
+}
+ .strengths-main-section {
+     position: relative;
+     z-index: 1;
+ }
+ .Our-Strengths-whoweare-section-container {
+     width: 100%;
+ }
+
+ .our-strengths-heading {
+     text-align: center;
+     margin-bottom: 2rem;
+     position: relative;
+ }
+
+ .main-title {
+     font-weight: 900;
+     background: #fff;
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     letter-spacing: -2px;
+     text-transform: uppercase;
+     position: relative;
+     display: inline-block;
+     opacity: 0;
+     display: flex;
+     margin-bottom: 1rem;
+     transform: translateY(30px);
+     transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+ }
+
+ .main-title.animate-in {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+ .title-decoration {
+     width: 150px;
+     /* height: 4px; */
+     border-radius: 2px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .title-decoration::after {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+     animation: shimmer 3s ease-in-out infinite;
+ }
+
+ .Our-Strengths-section {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 20px;
+     /* flex-wrap: wrap; */
+ }
+
+ .OurStreng-contact {
+     border: 2px solid rgba(255, 255, 255, 0.1);
+     padding: 1rem;
+     width: 50vh;
+     height: 40vh;
+     background: rgba(255, 255, 255, 0.05);
+     backdrop-filter: blur(10px);
+     border-radius: 0;
+     position: relative;
+     overflow: hidden;
+     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     cursor: pointer;
+     opacity: 0;
+     border-radius: 5px;
+     transform: translateY(50px);
+ }
+
+ .OurStreng-contact.animate-in {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+ .OurStreng-contact::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+     transition: left 0.6s ease;
+ }
+
+ .OurStreng-contact:hover::before {
+     left: 100%;
+ }
+
+ .OurStreng-contact:hover {
+     border-color: rgba(59, 130, 246, 0.5);
+     background: rgba(255, 255, 255, 0.1);
+     transform: translateY(-10px);
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+ }
+
+ .strength-overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: linear-gradient(45deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+     opacity: 0;
+     transition: opacity 0.4s ease;
+ }
+
+ .OurStreng-contact:hover .strength-overlay {
+     opacity: 1;
+ }
+
+ .strength-title {
+     /* font-size: 1.5rem; */
+     font-weight: 700;
+     color: #ffffff;
+     display: flex;
+     margin-bottom: 1rem;
+     text-transform: lowercase;
+     letter-spacing: 1px;
+     line-height: 1.2;
+ }
+
+ .strength-description {
+     /* font-size: 1rem; */
+     color: rgba(255, 255, 255, 0.8);
+     line-height: 1.6;
+     margin: 0;
+     font-weight: 400;
+ }
+
+ /* Animations */
+ @keyframes backgroundMove {
+
+     0%,
+     100% {
+         transform: translateX(0) translateY(0);
+     }
+
+     25% {
+         transform: translateX(20px) translateY(-20px);
+     }
+
+     50% {
+         transform: translateX(-20px) translateY(20px);
+     }
+
+     75% {
+         transform: translateX(20px) translateY(20px);
+     }
+ }
+
+ @keyframes floatingDots {
+     0% {
+         transform: translateY(0) rotate(0deg);
+     }
+
+     100% {
+         transform: translateY(-20px) rotate(360deg);
+     }
+ }
+
+ @keyframes shimmer {
+     0% {
+         left: -100%;
+     }
+
+     100% {
+         left: 100%;
+     }
+ }
+
+
+ /* Reduced motion */
+ @media (prefers-reduced-motion: reduce) {
+     * {
+         animation-duration: 0.01ms !important;
+         animation-iteration-count: 1 !important;
+         transition-duration: 0.01ms !important;
      }
  }

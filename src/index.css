@@ -30,3 +30,6 @@ html, body {
   background-blend-mode: overlay;      /* Optional: blend if you use a color */
   font-family: sans-serif;
 }
+.ant-row{
+  display:block;
+}

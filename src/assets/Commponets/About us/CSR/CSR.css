@@ -213,3 +213,9 @@
     padding-bottom: 10px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
+@media(max-width:900px){
+    .csr-images-grid-container{
+        display: flex;
+    flex-direction: column;
+    }
+}

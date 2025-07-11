@@ -74,13 +74,13 @@
     font-size: 0.95rem;
     line-break: anywhere;
 }
-
+/* 
 .main-title {
     text-align: justify;
     margin-bottom: 2rem;
     letter-spacing: -1px;
     color: white;
-}
+} */
 
 .main-description {
     line-height: 1.7;

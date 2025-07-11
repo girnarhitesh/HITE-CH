@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import "./Whoweare.css"
 import Hero from '../../AllHomepages/Hero/Hero'
 import { motion } from 'framer-motion';
@@ -6,6 +6,17 @@ import { Row, Col } from 'antd';
 import { Eye, Rocket } from 'lucide-react';
 
 function Whoweare() {
+
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsVisible(true);
+        }, 300);
+        return () => clearTimeout(timer);
+    }, []);
+
 
     const Achivmentitem = [
         {
@@ -33,6 +44,30 @@ function Whoweare() {
             name: "Ongoing Projects 20+"
         },
     ];
+
+    const OurStrengthsitem = [
+        {
+            title: "Constant Technological Upgradation",
+            description: "Hitech has continually invested in upgrading its Construction Technology and Information Technology driven processes."
+        },
+        {
+            title: "Qualified Leadership",
+            description: "Hitech’s top management includes highly qualified Civil Engineers who knows not only the business of construction but also the craft of building. This helps them understand the finer nuances of construction and turn clients’ visions into realities."
+        },
+        {
+            title: "Adopting the best",
+            description: "Hitech has been quick to adopt best practices in the industry in systems and processes. It has excellent project planningand monitoring systems and well established quality and safety protocols."
+        },
+        {
+            title: "Qualified and Experienced Execution Team",
+            description: "Qualified leaders make qualified teams. Hitech has invested in its people and created trained professionals from the smallest to highest levels of the organisation so that good decisions are made at each level."
+        },
+        {
+            title: "Project Specific Approach",
+            description: "Even as it grows, Hitech retains some of the best advantages of being flexible. With a project-specific working approach, it is able to adapt to the needs of the clients and respond to emergent needs of the project."
+        },
+
+    ]
 
     return (
         <>
@@ -96,6 +131,42 @@ function Whoweare() {
                     </div>
                 </div>
             </section>
+
+
+            {/* <Row> */}
+            {/* <Col lg={12} sm={16} md={24}> */}
+            <div className="strengths-wrapper">
+                <section className="strengths-main-section">
+                    <div className="sectionpadding">
+                        <div className="Our-Strengths-whoweare-section-container">
+                            <div className="our-strengths-heading">
+                                <h1 className={`main-title ${isVisible ? 'animate-in' : ''}`}>Our Strengths</h1>
+                                <div className="title-decoration"></div>
+                            </div>
+                            <div className="Our-Strengths-section">
+                                {OurStrengthsitem.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className={`OurStreng-contact ${isVisible ? 'animate-in' : ''}`}
+                                        style={{ animationDelay: `${index * 0.2}s` }}
+                                    >
+                                        {/* <div className="strength-number">
+                                            {String(index + 1).padStart(2, '0')}
+                                        </div> */}
+                                        <div className="strength-content">
+                                            <span className="strength-title">{item.title}</span>
+                                            <p className="strength-description">{item.description}</p>
+                                        </div>
+                                        <div className="strength-overlay"></div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                    {/* </Col> */}
+                    {/* </Row>*/}
+                </section>
+            </div>
         </>
     )
 }
