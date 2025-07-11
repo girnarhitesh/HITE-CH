@@ -1,6 +1,7 @@
-.Standard-Row{
-    padding: 40px 0;
+.Standard-Row {
+    padding: 60px 0;
 }
+
 .header-icon {
     display: inline-flex;
     align-items: center;
@@ -47,11 +48,7 @@
 }
 
 .description-card {
-    /* background: white; */
     border-radius: 1rem;
-    /* padding: 2rem; */
-    /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); */
-    /* border: 1px solid #f3f4f6; */
     margin-top: 2vh;
 }
 
@@ -70,11 +67,9 @@
     font-weight: 300;
     line-height: 30px;
     margin-bottom: 2rem;
-        color: #374151;
+    color: #374151;
 }
 
-
-/* Features Grid */
 .features-grid {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -175,9 +170,195 @@
     border: 1px solid #f3f4f6;
 }
 
-.standers-contant-container{
+.standers-contant-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
+}
+
+.saftey-img-containers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 30px; */
+    /* flex-wrap: wrap; */
+    /* Allow wrapping on smaller screens */
+}
+
+.Safety-section-container h1 {
+    margin-bottom: 1vh;
+}
+
+.Safety-section-container p {
+    font-size: 20px;
+}
+
+.safety-img-container-section {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+    object-fit: cover;
+}
+
+.saftey-contant {
+    flex: 1;
+    min-width: 280px;
+}
+
+.saftey-contant p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+}
+
+
+@media (max-width: 576px) {
+    .saftey-contant p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media(max-width:900px) {
+    .image-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .saftey-img-containers {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .safety-img-container-section,
+    .saftey-contant {
+        max-width: 100%;
+    }
+
+    .saftey-contant p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+/* Standards.css */
+.standards-section-wrapper h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.standards-section-wrapper .text-muted {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.stander-img-section-container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 25px;
+    justify-content: center;
+}
+
+.stander-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stander-img-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.stander-img-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(100%);
+}
+
+.stander-img-container:hover img {
+    transform: scale(1.05);
+    filter: brightness(60%);
+}
+
+.stander-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 12px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.stander-img-container:hover .stander-img-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stander-img-overlay p {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Training-devlopment-img-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.devlopment-img-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+}
+
+.devlopment-img img {
+    width: 40vh;
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.devlopment-img img:hover {
+    transform: scale(1.02); 
+}
+.Training-devlopment-container p{
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 2vh;
+    width: 100%;
+}
+.Training-devlopment-container span{
+    font-size: 16px;
 }
