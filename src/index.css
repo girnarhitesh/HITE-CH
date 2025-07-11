@@ -7,32 +7,44 @@
 .sectionpadding {
   padding: 3rem 3rem;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 2.3rem;
   color: #0D2E61;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-p,span{
- font-family: Raleway, sans-serif;
- font-weight: 300;
- letter-spacing: 1px;
+
+p,
+span {
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
-html, body {
+
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background-image: url("https://media.istockphoto.com/id/1320330053/photo/dotted-grid-paper-background-texture-seamless-repeat-pattern.jpg?s=612x612&w=0&k=20&c=BmjvnTrP1ihj0cOdP_t5YPvbNpr_BV_4GDKt7qMc-x4=");
-  background-size: cover;              /* ✅ scale image to cover screen */
-  background-position: center center;  /* ✅ center it */
-  background-repeat: no-repeat;        /* ✅ no tiling */
-  background-attachment: fixed;        /* ✅ makes it stay during scroll */
-  background-blend-mode: overlay;      /* Optional: blend if you use a color */
+  background-image: url("https://imgs.search.brave.com/_G--TwHlRBq5Jd6QU-AZWxCOGcCvDkMnnHM6GA4jM9A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hcmNoaXRlY3R1/cmFsLWRyYXdpbmct/d2l0aC1idWlsZGlu/Zy1jb25zdHJ1Y3Rp/b25fMTIwNTQyLTE4/NjIuanBnP3NlbXQ9/YWlzX2h5YnJpZCZ3/PTc0MA");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
   font-family: sans-serif;
 }
-.ant-row{
-  display:block;
+
+.ant-row {
+  display: block;
 }
-.ant-col-lg-12{
+
+.ant-col-lg-12 {
   max-width: none;
 }
