@@ -72,7 +72,7 @@ const CoreValues = () => {
             <div className="core-values-container">
                 <div className="sectionpadding">
                     <Row>
-                        <Col>
+                        <Col lg={12} sm={16} md={24}>
                             <div className="floating-shapes">
                                 <div className="floating-shape"></div>
                                 <div className="floating-shape"></div>
@@ -80,7 +80,7 @@ const CoreValues = () => {
                             </div>
 
                             <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                                <h1 className="main-title">Our Core Values</h1>
+                                <h1 className="main-title-heading">Our Core Values</h1>
                                 <p className="main-description">
                                     Our core values define who we are and what we stand for as a company. Value-driven companies achieve better brand and business performance. Our core values form an integral part of our work culture, giving our clients a unique experience of trust. We have built our company around following 5 core values.
                                 </p>
@@ -111,36 +111,36 @@ const CoreValues = () => {
 
             <section>
                 <div className="sectionpadding">
-                    {/* <Row>
-            <Col lg={12} sm={16} md={24}> */}
-                    <div className="ourvalue-section-icone-container">
-                        <div className="section-container-icon">
-                            <h1>Getting the Right People Together</h1>
-                            <p>Hitech has always believed in building an inclusive and diverse culture where colleagues feel valued, challenged, motivated and treated fairly by nurturing :-</p>
-                        </div>
-                    </div>
+                    <Row>
+                        <Col lg={12} sm={16} md={24}>
+                            <div className="ourvalue-section-icone-container">
+                                <div className="section-container-icon">
+                                    <h1>Getting the Right People Together</h1>
+                                    <p>Hitech has always believed in building an inclusive and diverse culture where colleagues feel valued, challenged, motivated and treated fairly by nurturing :-</p>
+                                </div>
+                            </div>
 
-                    <div className="ourvalue-icone-box-container">
-                        <div className="icon-box-container">
-                            <span><FaIndustry /></span>
-                            <h1>Leadership</h1>
-                            <p>Investing in our people to meet our enterprise needs while delivering outstanding results for our customers.</p>
-                        </div>
+                            <div className="ourvalue-icone-box-container">
+                                <div className="icon-box-container">
+                                    <span><FaIndustry /></span>
+                                    <h1>Leadership</h1>
+                                    <p>Investing in our people to meet our enterprise needs while delivering outstanding results for our customers.</p>
+                                </div>
 
-                        <div className="icon-box-container">
-                            <span><MdVerifiedUser /></span>
-                            <h1>Accountability</h1>
-                            <p>Holding ourselves and our colleagues at all levels accountable for meeting commitments.</p>
-                        </div>
+                                <div className="icon-box-container">
+                                    <span><MdVerifiedUser /></span>
+                                    <h1>Accountability</h1>
+                                    <p>Holding ourselves and our colleagues at all levels accountable for meeting commitments.</p>
+                                </div>
 
-                        <div className="icon-box-container">
-                            <span><IoHome /></span>
-                            <h1>Competence</h1>
-                            <p>We believe right skills can deliver better results hence we strive to depute right person at right job.</p>
-                        </div>
-                    </div>
-                    {/* </Col>
-        </Row> */}
+                                <div className="icon-box-container">
+                                    <span><IoHome /></span>
+                                    <h1>Competence</h1>
+                                    <p>We believe right skills can deliver better results hence we strive to depute right person at right job.</p>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
             </section>
 

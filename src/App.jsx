@@ -9,7 +9,7 @@ import CSR from './assets/Commponets/About us/CSR/CSR';
 import Awords from './assets/Commponets/About us/Awords/Awords';
 import Managment from './assets/Commponets/About us/Our Management/Managment';
 import Whoweare from './assets/Commponets/About us/wo we are/Whoweare';
-
+import Standards from './assets/Commponets/About us/Our Standards/Standards';
 
 function App() {
   return (
@@ -22,7 +22,8 @@ function App() {
         <Route path='csr' element={<CSR />} />
         <Route path='/awards' element={<Awords />} />
         <Route path='/management' element={<Managment />} />
-        <Route path='/whoweare' element={<Whoweare/>}/>
+        <Route path='/whoweare' element={<Whoweare />} />
+        <Route path='/standards' element={<Standards/>} />
       </Routes>
     </BrowserRouter>
   );

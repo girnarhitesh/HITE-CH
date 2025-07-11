@@ -33,3 +33,6 @@ html, body {
 .ant-row{
   display:block;
 }
+.ant-col-lg-12{
+  max-width: none;
+}

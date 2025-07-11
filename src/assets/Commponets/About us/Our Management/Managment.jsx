@@ -38,7 +38,7 @@ function Managment() {
     return (
         <>
             <Row>
-                <Col>
+                <Col lg={12} sm={16} md={24}>
                     <section>
                         <div className="sectionpadding">
                             <div className="Managment-section">
@@ -108,7 +108,7 @@ function Managment() {
                     </Col>
                 </Row>
             </div>
-            <Ourvalue/>
+            <Ourvalue />
 
         </>
     )

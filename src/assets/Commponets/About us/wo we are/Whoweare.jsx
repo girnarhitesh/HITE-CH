@@ -3,7 +3,7 @@ import "./Whoweare.css"
 import Hero from '../../AllHomepages/Hero/Hero'
 import { motion } from 'framer-motion';
 import { Row, Col } from 'antd';
-import { Eye, Rocket } from 'lucide-react';
+import Journey from '../Journey/Journey';
 
 function Whoweare() {
 
@@ -167,6 +167,7 @@ function Whoweare() {
                     {/* </Row>*/}
                 </section>
             </div>
+            <Journey/>
         </>
     )
 }
