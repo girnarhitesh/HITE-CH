@@ -89,7 +89,7 @@ function Gallery() {
         <>
             <section > {/* Added a wrapper class for potential overall section styling */}
                 <Row >
-                    <Col xs={12} md={10} lg={10}>
+                    <Col lg={12} md={24} sm={16}>
                         <div className="sectionpadding">
                             <div className="img-gallery-section-container">
                                 <div className="img-gallery-container">
@@ -116,8 +116,7 @@ function Gallery() {
 
             <section>
                 <Row >
-                    <Col xs={12} lg={10} >
-                        {/* sectionpadding div added back as per your input */}
+                    <Col lg={12} md={24} sm={16}>
                         <div className="sectionpadding">
                             <div className="our-values-content-container">
                                 <div className="section-title-wrapper text-center mb-5">
@@ -127,7 +126,7 @@ function Gallery() {
                                     </h2>
                                 </div>
 
-                                <div className="values-grid">
+                                <div className="values-grid-section">
                                     {ourvalueitem.map((item, index) => (
                                         <motion.div
                                             key={index}

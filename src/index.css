@@ -48,3 +48,8 @@ body {
 .ant-col-lg-12 {
   max-width: none;
 }
+@media(max-width:900px){
+  .sectionpadding{
+    padding: 2rem 2rem;
+  }
+}

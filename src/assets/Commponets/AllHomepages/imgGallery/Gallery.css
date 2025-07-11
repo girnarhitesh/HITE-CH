@@ -98,6 +98,7 @@
     .img-gallery-container {
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
 
 
@@ -117,7 +118,7 @@
     display: flex;
 }
 
-.values-grid {
+.values-grid-section {
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 30px;
@@ -220,5 +221,29 @@
     color: #0D2E61;
     font-size: 20px;
     letter-spacing: 1px;
+
+}
+
+@media(max-width:900px) {
+    .gallery-image {
+        width: 100%;
+    }
+
+    .img-container-gallery {
+        width: 50vh;
+        height: auto;
+
+
+    }
+
+    .values-grid-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our-values-title {
+        display: flex;
+        font-size: 25px;
+    }
 
 }
