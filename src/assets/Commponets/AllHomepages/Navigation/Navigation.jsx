@@ -20,9 +20,9 @@ function Navigation() {
             link: "/expertise",
             sublink: [
                 { label: "Plant & Machinery", link: "/machinery" },
-                { label: "Advanced Formwork", link: "/formwork" },
-                { label: "Construction Technology", link: "/technology" },
-                { label: "Quality Assurance", link: "/quality" }
+                { label: "  Formwork", link: "/formwork" },
+                { label: "  Technology", link: "/technology" },
+
             ]
         },
         {
