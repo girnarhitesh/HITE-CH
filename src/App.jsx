@@ -12,6 +12,7 @@ import Whoweare from './assets/Commponets/About us/wo we are/Whoweare';
 import Standards from './assets/Commponets/About us/Our Standards/Standards';
 import Machinery from './assets/Commponets/ Expertise/Machinery/Machinery';
 import Formwork from './assets/Commponets/ Expertise/Formwork/Formwork';
+import Tecnology from './assets/Commponets/ Expertise/Tecnology/Tecnology';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/standards' element={<Standards />} />
         <Route path='/machinery' element={<Machinery />} />
         <Route path='/formwork' element={<Formwork/>}/>
+        <Route path='/technology' element={<Tecnology/>}/>
       </Routes>
     </BrowserRouter>
   );
