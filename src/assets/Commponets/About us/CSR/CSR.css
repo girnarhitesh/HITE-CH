@@ -75,10 +75,9 @@
 }
 
 .csr-content-container {
-    padding: 60px 0;
+    padding: 70px 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 767.98px) {
     .csr-title {
         font-size: 2rem;

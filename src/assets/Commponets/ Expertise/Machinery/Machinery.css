@@ -1,0 +1,58 @@
+.PLant-Machinery-section {
+    padding: 70px 0;
+}
+
+.plant-Machinery-img-container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.Plant-img-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.Plant-img-section img {
+    width: 50vh;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 10px;
+    border-right: 10px;
+    transition: transform 0.4s ease;
+}
+
+.plant-caption {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 51vh;
+    background: rgba(13, 46, 97, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.Plant-img-section:hover img {
+    transform: scale(1.05);
+}
+
+.Plant-img-section:hover .plant-caption {
+    bottom: 0;
+}
+
+.Plant-machinery-section p {
+    font-size: 18px;
+    width: 100%;
+    line-height: 26px;
+    margin-top: 2vh;
+}
