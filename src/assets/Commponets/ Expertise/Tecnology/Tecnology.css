@@ -77,13 +77,14 @@
 }
 
 /* ...... */
+.hi-app-row {
+    display: flex;
+}
 
 .hi-mapp-container {
-    margin: auto;
     display: flex;
     gap: 2rem;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .hi-mapp-image {
@@ -140,4 +141,118 @@
     font-size: 1rem;
     color: #1a202c;
     line-height: 1.5;
+}
+
+
+.text-content {
+    flex: 1 1 500px;
+
+    h2 {
+        font-size: 2.5rem;
+        color: #0d2e61;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.125rem;
+        color: #444;
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+
+    .iot-points {
+        list-style: none;
+        padding: 0;
+
+        li {
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            color: #333;
+            transition: all 0.3s ease;
+
+            i {
+                font-size: 1.5rem;
+                color: #0d2e61;
+                margin-top: 4px;
+            }
+
+            span {
+                line-height: 1.6;
+            }
+
+            &:hover {
+                transform: translateX(5px);
+                color: #0d2e61;
+            }
+        }
+    }
+}
+
+.image-content {
+    flex: 1 1 400px;
+    text-align: center;
+
+
+    img {
+
+        height: 100%;
+        border-radius: 10px;
+        width: 65vh;
+        transition: transform 0.4s ease;
+    }
+
+    .fade-in-img:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .future-tech-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+.tecnology-furture-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tecnology-heading {
+    margin-bottom: 5vh;
+}
+
+.tecnology-section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    height: 55vh;
+}
+
+.tecnology-section-2-contant p {
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 2vh;
+}
+.tecnology-section-2-contant h1{
+    margin-bottom: 2vh;
+}
+
+.tecnology-img-2 img {
+    width: 100%;
 }

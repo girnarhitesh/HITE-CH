@@ -43,6 +43,7 @@ body {
 
 .ant-row {
   display: block;
+  flex-wrap: nowrap;
 }
 
 .ant-col-lg-12 {
