@@ -14,6 +14,7 @@ import Machinery from './assets/Commponets/ Expertise/Machinery/Machinery';
 import Formwork from './assets/Commponets/ Expertise/Formwork/Formwork';
 import Tecnology from './assets/Commponets/ Expertise/Tecnology/Tecnology';
 import Residential from './assets/Commponets/Projects/Residential/Residential';
+import Commercial from './assets/Commponets/Projects/Commercial/Commercial';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='/formwork' element={<Formwork/>}/>
         <Route path='/technology' element={<Tecnology/>}/>
         <Route path='/residential' element={<Residential/>}/>
+        <Route path='/commercial' element={<Commercial/>}/>
       </Routes>
     </BrowserRouter>
   );

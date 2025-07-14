@@ -1,9 +1,9 @@
-.residential-filter-buttons {
+.Commercial-filter-buttons {
     margin-top: 10vh;
 
 }
 
-.residential-filter-buttons button {
+.Commercial-filter-buttons button {
     background: #002244;
     color: white;
     border: none;
@@ -13,7 +13,7 @@
     transition: 0.3s;
 }
 
-.residential-card {
+.Commercial-card {
     border: 1px solid #ddd;
     border-radius: 10px;
     background: #fff;
@@ -21,21 +21,13 @@
     transition: 0.3s;
     height: auto;
 }
-
-.ant-image .ant-image-img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-.residential-img {
+.Commercial-img {
     width: 100%;
     height: 40vh !important;
     object-fit: cover;
 }
 
-.residential-card h3 {
+.Commercial-card h3 {
     margin: 0 0 10px;
     color: #333;
     font-size: 20px;
@@ -43,31 +35,31 @@
     letter-spacing: 1px;
 }
 
-.residential-card p {
+.Commercial-card p {
     margin: 4px 0;
     font-size: 18px;
     line-height: 30px;
 }
 
-.residenial-col {
+.Commercial-col {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     gap: 24px;
     margin-top: 40px;
 }
 
-.residenial-contant-container {
+.Commercial-contant-container {
     padding: 20px;
 }
 
-.residential-filter-buttons {
+.Commercial-filter-buttons {
     display: flex;
     justify-content: start;
     gap: 15px;
     margin-bottom: 20px;
 }
 
-.residential-filter-buttons button {
+.Commercial-filter-buttons button {
     padding: 10px 20px;
     border: none;
     background-color: #0D2E61;
@@ -78,28 +70,4 @@
     width: 15vh;
     letter-spacing: 1px;
     border-radius: none;
-}
-
-.ant-image-preview-switch-right {
-    background-color: #0D2E61;
-    color: white;
-}
-.ant-image-preview-switch-right:hover {
-    background-color: #0D2E61;
-    color: white;
-}
-
-.ant-image-preview-switch-left {
-    background-color: #0D2E61;
-    color: white;
-}
-.ant-image-preview-switch-left:hover {
-    background-color: #0D2E61;
-    color: white;
-}
-@media(max-width:900px){
-    .residenial-col{
-        display: flex;
-        flex-direction: column;
-    }
 }
