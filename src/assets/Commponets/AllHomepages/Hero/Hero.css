@@ -111,18 +111,17 @@
 .hero-img-section {
   position: relative;
   width: 100%;
-  max-width: 100%;
   overflow: hidden;
 }
 
-.hero-img-section img {
+.hero-video {
   width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
-  filter: brightness(0.5);
-  /* ✅ darken image with black overlay effect */
+  filter: brightness(0.5); /* darken for text visibility */
 }
+
 
 @keyframes fadeInUp {
   0% {
