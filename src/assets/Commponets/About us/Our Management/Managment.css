@@ -102,3 +102,34 @@
 .our-tema-img-container img {
     width: 100%;
 }
+
+@media(max-width:900px) {
+    .Managment-section-container h1 {
+        font-size: 25px;
+    }
+
+    .IMg-section-container-contant span {
+        width: 100%;
+        text-align: justify;
+        line-break: anywhere;
+    }
+
+    .Our-team-Row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our-team-container h1 {
+        font-size: 25px;
+    }
+
+    .our-tema-img-container img {
+        width: 100%;
+        margin-top: 3vh;
+    }
+
+    .section-container-icon h1 {
+        font-size: 25px;
+        margin-bottom: 2vh;
+    }
+}

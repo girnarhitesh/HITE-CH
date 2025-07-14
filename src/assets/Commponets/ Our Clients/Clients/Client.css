@@ -116,3 +116,18 @@
 .ant-collapse-header-text {
     font-size: 20px;
 }
+@media(max-width:900px){
+    .clients-title{
+        font-size: 25px;
+    }
+    .clients-description{
+        width: 100%;
+        line-break: anywhere;
+    }
+    .Clients-grid-container{
+        gap: 20px;
+    }
+    .testomonial-sectio-container h1{
+        font-size: 25px;
+    }
+}

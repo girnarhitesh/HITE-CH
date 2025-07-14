@@ -234,6 +234,10 @@
         max-width: 100%;
     }
 
+    .safety-img-container-section img {
+        width: 100%;
+    }
+
     .saftey-contant p {
         font-size: 18px;
         line-height: 28px;
@@ -402,4 +406,62 @@
 
 .Training-devlopment-container span {
     font-size: 16px;
+}
+
+@media(max-width:900px) {
+    .main-title-Standards {
+        font-size: 25px;
+    }
+
+    .description-text {
+        width: 100%;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    .standers-contant-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature-icon {
+        background: #0d2e61;
+        color: white;
+        border-radius: 50%;
+        padding: 10px;
+        width: 8vh;
+        height:8vh;
+    }
+
+    .Safety-section-container h1 {
+        font-size: 25px;
+    }
+
+    .stander-img-section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .standards-section-wrapper h2 {
+        font-size: 25px;
+    }
+
+    .standards-section-wrapper .text-muted {
+        text-align: justify;
+        line-break: anywhere;
+    }
+
+    .Training-devlopment-img-section-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-img img{
+        width: 100%;
+    }
+    .grid-img.center-img img{
+        width: 100%;
+    }
+
 }

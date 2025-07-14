@@ -87,6 +87,7 @@
     .architect-img-wrapper {
         height: 130px;
     }
+   
 }
 
 @media (min-width: 1200px) {
@@ -97,5 +98,18 @@
 
     .architect-img-wrapper {
         height: 140px;
+    }
+}
+@media(max-width:900px){
+    .architect-title{
+        font-size: 23px;
+    }
+    .architect-description{
+        width: 100%;
+        line-break: anywhere;
+    }
+    .architect-grid-container{
+        gap: 20px;
+        width: 100%;
     }
 }

@@ -149,4 +149,8 @@
         font-size: 26px;
         margin-left: 2vh;
     }
+    .projects-grid{
+        display: flex;
+        flex-direction: column;
+    }
 }

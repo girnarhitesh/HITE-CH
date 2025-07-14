@@ -61,3 +61,15 @@
     width: 90%;
     margin-top: 2vh;
 }
+@media(max-width:900px){
+    .Foemwork-section h1{
+        font-size: 25px;
+    }
+    .Formwark-img-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .Foemwork-section p{
+        width: 100%;
+    }
+}

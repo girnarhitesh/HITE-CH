@@ -70,7 +70,7 @@
     line-break: anywhere;
 }
 
-.main-title-heading{
+.main-title-heading {
     text-align: justify;
     margin-bottom: 1rem;
     letter-spacing: -1px;
@@ -100,10 +100,7 @@
         font-size: 2.5rem;
     }
 
-    .main-description {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
+
 
     .value-card {
         padding: 1.5rem;
@@ -199,7 +196,7 @@
 }
 
 .section-container-icon p {
-    width: 100vh;
+    width: 70%;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 1px;
@@ -217,4 +214,34 @@
     font-size: 17px;
     width: 100%;
     text-align: center;
+}
+
+@media(max-width:900px) {
+    .main-title-heading {
+        font-size: 25px;
+    }
+
+    .main-description {
+        width: 100%;
+        line-break: anywhere;
+    }
+
+    .icon-box-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        height: 30vh;
+        width: 100%;
+        text-align: center;
+        flex: 1 1 30%;
+        border: 1px solid rgb(242, 231, 231);
+    }
+
+    .ourvalue-icone-box-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-container-icon p{
+        width: 100%;
+    }
 }

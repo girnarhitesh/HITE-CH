@@ -78,42 +78,7 @@
     padding: 70px 0;
 }
 
-@media (max-width: 767.98px) {
-    .csr-title {
-        font-size: 2rem;
-    }
-
-    .csr-subsection-title {
-        font-size: 1.5rem;
-    }
-
-    .csr-description,
-    .csr-list li {
-        font-size: 0.95rem;
-    }
-
-    .csr-content-container {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .csr-title {
-        font-size: 1.8rem;
-    }
-
-    .csr-subsection-title {
-        font-size: 1.3rem;
-    }
-
-    .csr-list {
-        padding-left: 20px;
-    }
-}
-
 /* CSRImages.css */
-
-
 
 .csr-grid-header {
     margin-bottom: 40px;
@@ -216,5 +181,18 @@
     .csr-images-grid-container {
         display: flex;
         flex-direction: column;
+    }
+    .csr-description, .csr-list li{
+        width: 100%;
+    }
+    .csr-list{
+        width: 100%;
+    }
+    .csr-grid-header h2{
+    font-size: 25px;
+
+    }
+    .img-card-csr-effect img{
+        width: 100%;
     }
 }

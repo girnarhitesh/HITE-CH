@@ -7,7 +7,6 @@ function Navigation() {
     const Navigationitem = [
         {
             title: "Projects",
-            link: "/projects",
             sublink: [
                 { label: "Residential Projects", link: "/residential" },
                 { label: "Commercial Buildings", link: "/commercial" },
@@ -17,7 +16,6 @@ function Navigation() {
         },
         {
             title: "Expertise",
-            link: "/expertise",
             sublink: [
                 { label: "Plant & Machinery", link: "/machinery" },
                 { label: "  Formwork", link: "/formwork" },
@@ -27,7 +25,6 @@ function Navigation() {
         },
         {
             title: "About Us",
-            link: "/about",
             sublink: [
                 { label: "Who We Are", link: "/whoweare" },
                 { label: "Our Management", link: "/management" },
@@ -39,7 +36,6 @@ function Navigation() {
         },
         {
             title: "Clients",
-            link: "/clients",
             sublink: [
                 { label: "Our Clients", link: "/client" },
                 { label: "Architects & Consultants", link: "/architects" },

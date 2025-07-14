@@ -245,14 +245,79 @@
 }
 
 .tecnology-section-2-contant p {
-    font-size: 21px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 40px;
     margin-bottom: 2vh;
 }
-.tecnology-section-2-contant h1{
+
+.tecnology-section-2-contant h1 {
     margin-bottom: 2vh;
 }
 
 .tecnology-img-2 img {
     width: 100%;
+}
+
+@media(max-width:900px) {
+    .Tecnology-section-container h1 {
+        font-size: 25px;
+    }
+
+    .Tecnology-section-container p {
+        width: 100%;
+    }
+
+    .hi-app-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hi-mapp-image img {
+        width: 100%;
+    }
+
+    .tecnology-furture-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tecnology-heading h1 {
+        font-size: 25px;
+    }
+
+    .image-content {
+        img {
+
+            height: 100%;
+            border-radius: 10px;
+            width: 100%;
+            transition: transform 0.4s ease;
+        }
+
+        .fade-in-img:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .tecnology-section-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tecnology-section-2-contant h1 {
+        font-size: 25px;
+    }
+    .tecnology-img-2 img{
+        margin-top: -17vh;
+    }
+    .hi-mapp-content h2{
+        font-size: 25px;
+    }
+    .erp-text h2{
+        font-size: 25px;
+    }
+    .erp-text p{
+        width: 100%;
+    }
+    
 }
