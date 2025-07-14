@@ -8,10 +8,10 @@ function Navigation() {
         {
             title: "Projects",
             sublink: [
-                { label: "Residential Projects", link: "/residential" },
-                { label: "Commercial Buildings", link: "/commercial" },
-                { label: "Industrial Facilities", link: "/industrial" },
-                { label: "Institutional & Corporate", link: "/institutional" }
+                { label: "Residential ", link: "/residential" },
+                { label: "Commercial ", link: "/commercial" },
+                { label: "Industrial ", link: "/industrial" },
+                { label: "Institutional And Corporate", link: "/institutional" }
             ]
         },
         {

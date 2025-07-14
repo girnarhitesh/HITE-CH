@@ -1,0 +1,99 @@
+.residential-filter-buttons {
+    margin-top: 10vh;
+
+}
+
+.residential-filter-buttons button {
+    background: #002244;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.residential-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    height: auto;
+}
+
+.ant-image .ant-image-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.residential-img {
+    width: 100%;
+    height: 40vh !important;
+    object-fit: cover;
+}
+
+.residential-card h3 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.residential-card p {
+    margin: 4px 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.residenial-col {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.residenial-contant-container {
+    padding: 20px;
+}
+
+.residential-filter-buttons {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.residential-filter-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0D2E61;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    height: 5vh;
+    width: 15vh;
+    letter-spacing: 1px;
+    border-radius: none;
+}
+
+.ant-image-preview-switch-right {
+    background-color: #0D2E61;
+    color: white;
+}
+.ant-image-preview-switch-right:hover {
+    background-color: #0D2E61;
+    color: white;
+}
+
+.ant-image-preview-switch-left {
+    background-color: #0D2E61;
+    color: white;
+}
+.ant-image-preview-switch-left:hover {
+    background-color: #0D2E61;
+    color: white;
+}
