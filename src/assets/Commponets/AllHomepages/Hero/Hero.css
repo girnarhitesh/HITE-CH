@@ -15,6 +15,7 @@
 .hero-section-contant {
   display: flex;
   align-items: center;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -116,7 +117,7 @@
 
 .hero-video {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: block;
   object-fit: cover;
   filter: brightness(0.5); /* darken for text visibility */
@@ -138,14 +139,13 @@
 .Hero-section-img-contant {
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 27%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 100%;
   max-width: 700px;
   color: white;
   text-align: justify;
   line-break: anywhere;
-  padding: 20px;
   opacity: 0;
   animation: fadeInUp 1.2s ease-out forwards;
   animation-delay: 0.3s;
@@ -169,7 +169,7 @@
 .hero-social-icone-container {
   position: absolute;
   top: 90%;
-  left: 70%;
+  left:74%;
 }
 
 .Hero-section-icone {
