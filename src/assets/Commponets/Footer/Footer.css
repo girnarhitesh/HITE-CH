@@ -1,0 +1,165 @@
+/* Overall footer styling */
+.app-footer {
+    background-color: #0d1a38; 
+    color: #ffffff; 
+    padding: 50px 0 20px; 
+    font-family: Arial, sans-serif; 
+    position: relative; 
+    background-image: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 L 0 10" fill="none" stroke="%232c3e50" stroke-width="0.1"></path></pattern><rect width="100%" height="100%" fill="url(%23grid)" /></svg>'); /* Subtle grid pattern as seen in image */
+    background-size: auto; 
+}
+.Footer-Row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-padding {
+    padding: 0 5%; 
+    margin: 0 auto; 
+}
+
+.footer-heading {
+    color: #ffffff;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    position: relative; 
+    padding-bottom: 10px; 
+    font-weight: bold;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px; 
+    height: 3px; 
+    background-color: #e74c3c; 
+}
+
+.footer-heading-hidden {
+    visibility: hidden;
+}
+
+
+.footer-links, .footer-cert-list {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li, .footer-cert-list li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none; 
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+    display: flex; 
+    align-items: center;
+}
+
+.footer-links a::before {
+    content: '›'; 
+    margin-right: 8px;
+    font-size: 1.2em; 
+    color: #e74c3c; 
+    line-height: 1; 
+}
+
+
+.footer-links a:hover {
+    color: #e74c3c; 
+}
+
+
+.footer-address {
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+
+.footer-contact-info p {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    font-size: 1.1em;
+    margin-right: 10px;
+    color: #e74c3c; 
+}
+
+/* Social Media Icons */
+.footer-social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; 
+}
+
+.footer-social-icons a {
+    color: #ffffff;
+    font-size: 1.5em; 
+    transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    color: #e74c3c; 
+}
+
+.footer-certifications {
+    margin-top: 30px; 
+}
+.footer-cert-list li {
+    font-size: 0.95em;
+}
+
+
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 40px; 
+    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+@media (max-width: 768px) {
+    .footer-heading {
+        margin-bottom: 15px;
+    }
+    .footer-heading::after {
+        width: 30px;
+    }
+    .footer-certifications {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .app-footer {
+        padding: 30px 0 15px;
+    }
+    .footer-heading {
+        font-size: 1.2em;
+        text-align: center; /* Center headings on small screens */
+    }
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%); /* Center underline */
+    }
+    .footer-links, .footer-address, .footer-contact-info, .footer-cert-list {
+        text-align: center; /* Center text on small screens */
+    }
+    .footer-links a::before {
+        display: none; /* Hide arrows on very small screens if desired */
+    }
+    .footer-social-icons {
+        justify-content: center; /* Center social icons on small screens */
+    }
+}

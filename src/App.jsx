@@ -18,7 +18,7 @@ import Commercial from './assets/Commponets/Projects/Commercial/Commercial';
 import Industrial from './assets/Commponets/Projects/Industrial/Industrial';
 import Institutional from './assets/Commponets/Projects/Institutional/institutional';
 import Services from './assets/Commponets/Services/Services';
-import { Footer } from 'antd/es/layout/layout';
+import Footer from './assets/Commponets/Footer/Footer';
 
 function App() {
   return (
