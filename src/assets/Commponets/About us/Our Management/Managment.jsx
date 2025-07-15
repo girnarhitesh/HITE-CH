@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
 import "./Managment.css";
 import { Row, Col } from 'antd';
-import Ourvalue from '../Our value/Ourvalue';
+import Ourvalue from '../Our value/Ourvalue'
 
 function Managment() {
 
@@ -108,7 +107,7 @@ function Managment() {
                     </Col>
                 </Row>
             </div>
-            <Ourvalue />
+     <Ourvalue/>
 
         </>
     )

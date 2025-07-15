@@ -1,0 +1,73 @@
+.Industrial-filter-buttons {
+    margin-top: 10vh;
+
+}
+
+.Industrial-filter-buttons button {
+    background: #002244;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Industrial-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    height: auto;
+}
+.Industrial-img {
+    width: 100%;
+    height: 40vh !important;
+    object-fit: cover;
+}
+
+.Industrial-card h3 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.Industrial-card p {
+    margin: 4px 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.Industrial-col {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.Industrial-contant-container {
+    padding: 20px;
+}
+
+.Industrial-filter-buttons {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.Industrial-filter-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0D2E61;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    height: 5vh;
+    width: 15vh;
+    letter-spacing: 1px;
+    border-radius: none;
+}
