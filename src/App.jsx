@@ -17,6 +17,8 @@ import Residential from './assets/Commponets/Projects/Residential/Residential';
 import Commercial from './assets/Commponets/Projects/Commercial/Commercial';
 import Industrial from './assets/Commponets/Projects/Industrial/Industrial';
 import Institutional from './assets/Commponets/Projects/Institutional/institutional';
+import Services from './assets/Commponets/Services/Services';
+import { Footer } from 'antd/es/layout/layout';
 
 function App() {
   return (
@@ -38,7 +40,9 @@ function App() {
         <Route path='/commercial' element={<Commercial/>}/>
         <Route path='industrial' element={<Industrial/>}/>
         <Route path='/institutional' element={<Institutional/>}/>
+        <Route path='/services' element={<Services/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

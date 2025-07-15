@@ -58,29 +58,32 @@ function Gallery() {
 
     const ourvalueitem = [
         {
-            // Assign the actual imported React Icon component
-            icon: <MdPeople className="text-4xl text-blue-600" />, // Example: Add Tailwind classes or a custom CSS class for styling
+            icon: <MdPeople className="text-4xl text-blue-600" />,
             name: "People",
             description: "We believe in creating a culture of leadership, accountability & competence.",
             button: "Our Team",
+            path: "/management"
         },
         {
             icon: <MdCropRotate className="text-4xl text-green-600" />,
             name: "Process",
             description: "Our process & expertise ensures quality and timely delivery irrespective of the project size.",
             button: "Our Services",
+            path: "/services"
         },
         {
             icon: <SiStandardjs className="text-4xl text-purple-600" />,
             name: "Standards",
             description: "A Proven record of following best quality, safety standards and training practices in the construction industry.",
             button: "Standards",
+            path: "/standards"
         },
         {
             icon: <FaHammer className="text-4xl text-red-600" />,
             name: "Technology",
             description: "We promptly embrace state of the art construction technologies and enable our proceses with Information Technology",
             button: "Our Technology",
+            path: "/technology"
         },
     ];
 
@@ -122,7 +125,6 @@ function Gallery() {
                                 <div className="section-title-wrapper text-center mb-5">
                                     <h2 className="our-values-title">
                                         Our Core Values
-                                        <span className="our-values-underline"></span>
                                     </h2>
                                 </div>
 
@@ -141,11 +143,13 @@ function Gallery() {
                                             </div>
                                             <h3 className="value-name">{item.name}</h3>
                                             <p className="value-description-gallery">{item.description}</p>
-                                            {item.button && ( // Only render button if it exists
-                                                // Replaced React-Bootstrap Button with a standard HTML <button>
-                                                <Link to="/"><button className="value-custom-button">
-                                                    {item.button}
-                                                </button></Link>
+
+                                            {item.button && ( 
+                                                <Link to={item.path}>
+                                                    <button className="value-custom-button">
+                                                        {item.button}
+                                                    </button>
+                                                </Link>
                                             )}
                                         </motion.div>
                                     ))}

@@ -208,6 +208,8 @@
     font-size: 1.5rem;
     font-weight: 300;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .icon-box-container p {

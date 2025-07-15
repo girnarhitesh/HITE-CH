@@ -99,14 +99,14 @@
 .feature-icon {
     margin-bottom: 1rem;
     padding: 0.75rem;
-    background: #dbeafe;
+    background: #0d2e61;
     border-radius: 50%;
 }
 
 .feature-icon svg {
     width: 2rem;
     height: 2rem;
-    stroke: #2563eb;
+    stroke: #ffffff;
     fill: none;
 }
 

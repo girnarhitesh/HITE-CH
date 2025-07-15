@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Row, Col } from 'react-bootstrap';
-import './Achivment.css'; 
+import './Achivment.css';
+import { Link } from 'react-router-dom';
 import { FaHouseChimney, FaBuilding, FaIndustry, FaCity } from 'react-icons/fa6';
 
 function Achivment() {
@@ -33,22 +34,27 @@ function Achivment() {
     ];
     const categories = [
         {
-            icon: <FaHouseChimney className="text-4xl" />, // Larger icon size
+            icon: <FaHouseChimney className="text-4xl" />,
             title: "Residential",
+            path: "/residential"
         },
         {
             icon: <FaBuilding className="text-4xl" />,
             title: "Commercial",
+            path: "/commercial"
         },
         {
             icon: <FaIndustry className="text-4xl" />,
             title: "Industrial",
+            path: "/industrial"
         },
         {
-            icon: <FaCity className="text-4xl" />, // Using FaCity for Institutional & Corporate
+            icon: <FaCity className="text-4xl" />,
             title: "Institutional & Corporate",
-        },
-    ]
+            path: "/institutional"
+        }
+    ];
+
 
 
 
@@ -91,29 +97,31 @@ function Achivment() {
                                 ></div>
 
                                 <div className="content-wrapper">
-                                    <div className="section-title-container">
-                                        <h2 className="section-title">
-                                            Our Projects
-                                            <span className="section-title-underline"></span>
-                                        </h2>
-                                    </div>
+                                    <div> 
+                                        <div className="section-title-container">
+                                            <h2 className="section-title">
+                                                Our Projects
+                                            </h2>
+                                        </div>
 
-                                    <div className="projects-grid">
-                                        {categories.map((category, index) => (
-                                            <motion.div
-                                                key={index}
-                                                initial={{ opacity: 0, y: 40 }}
-                                                whileInView={{ opacity: 1, y: 0 }}
-                                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                                viewport={{ once: true, amount: 0.5 }}
-                                                className="project-card"
-                                            >
-                                                <div className="project-card-icon-wrapper">
-                                                    {category.icon}
-                                                </div>
-                                                <h3 className="project-card-title">{category.title}</h3>
-                                            </motion.div>
-                                        ))}
+                                        <div className="projects-grid">
+                                            {categories.map((category, index) => (
+                                                <Link to={category.path} key={index}>
+                                                    <motion.div
+                                                        initial={{ opacity: 0, y: 40 }}
+                                                        whileInView={{ opacity: 1, y: 0 }}
+                                                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                                                        viewport={{ once: true, amount: 0.5 }}
+                                                        className="project-card"
+                                                    >
+                                                        <div className="project-card-icon-wrapper">
+                                                            {category.icon}
+                                                        </div>
+                                                        <h3 className="project-card-title">{category.title}</h3>
+                                                    </motion.div>
+                                                </Link>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                             </section>

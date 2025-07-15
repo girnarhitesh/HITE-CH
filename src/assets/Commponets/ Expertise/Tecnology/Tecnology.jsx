@@ -74,19 +74,19 @@ const Tecnology = () => {
 
                                     <ul className="hi-mapp-features">
                                         <li>
-                                            <Bell className="feature-icon" />
+                                            <Bell className="feature-icon-tecnology" />
                                             <span>
                                                 <strong>Instant notification based Approval</strong> functionality, so work never stops.
                                             </span>
                                         </li>
                                         <li>
-                                            <Calculator className="feature-icon" />
+                                            <Calculator className="feature-icon-tecnology" />
                                             <span>
                                                 <strong>Monitoring Project financials, ManPower</strong> round the clock with enhanced analytics.
                                             </span>
                                         </li>
                                         <li>
-                                            <Fingerprint className="feature-icon" />
+                                            <Fingerprint className="feature-icon-tecnology" />
                                             <span>
                                                 <strong>Keeping Employees First</strong> by providing HRMS functionalities to them at the fingertips.
                                             </span>
