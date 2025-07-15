@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import { Row, Col } from 'antd';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './ourvalue.css';
+import './Ourvalue.css';
 import { FaIndustry } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
 import { MdVerifiedUser } from "react-icons/md";
