@@ -71,3 +71,10 @@
     letter-spacing: 1px;
     border-radius: none;
 }
+
+@media(max-width:900px){
+    .Industrial-col{
+        display: flex;
+        flex-direction: column;
+    }
+}
