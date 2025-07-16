@@ -20,14 +20,9 @@ import Institutional from './assets/Commponets/Projects/Institutional/institutio
 import Services from './assets/Commponets/Services/Services';
 import Footer from './assets/Commponets/Footer/Footer';
 
-// Import the new ScrollToTop component
-import ScrollToTop from './ScrollToTop'; // Adjust path if you put it elsewhere
-
 function App() {
   return (
     <BrowserRouter>
-      {/* Add ScrollToTop inside BrowserRouter */}
-      <ScrollToTop /> 
       <Navigation />
       <Routes>
         <Route path="/" element={<AllHomepage />} />
