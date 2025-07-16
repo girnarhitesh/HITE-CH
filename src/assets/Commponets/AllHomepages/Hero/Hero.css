@@ -287,10 +287,10 @@
   .Hero-section-img-contant h1 {
     font-size: 25px;
     width: 68%;
-    margin-left: 17vh !important;
+    margin-left: 17vh;
   }
 
-  .Hero-section-img-contant p {
+   p {
     font-size: 20px;
     margin-left: 17vh;
     width: 76%;
@@ -300,13 +300,16 @@
   .Hero-section-icone {
     font-size: 10px;
   }
+  .Hero-section-img-contant{
+    margin-left: 17vh !important;
+  }
 
 }
-@media(max-width:1219px){
+/* @media(max-width:1219px){
     .Hero-section-img-contant h1{
       margin-left: 8vh !important;
     }
     .Hero-section-img-contant p{
       margin-left: 8vh !important;
     }
-}
+} */
