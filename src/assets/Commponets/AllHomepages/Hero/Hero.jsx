@@ -99,8 +99,8 @@ const Hero = () => {
                                         </div>
 
                                         <div className="hero-buttons">
-                                            <a href="#" className="btn-primary">Our Projects</a>
-                                            <a href="#" className="btn-secondary">Get in Touch</a>
+                                            <a href="/services" className="btn-primary">Services</a>
+                                            <a href="/contact" className="btn-secondary">Contact</a>
                                         </div>
                                     </div>
                                 </div>
