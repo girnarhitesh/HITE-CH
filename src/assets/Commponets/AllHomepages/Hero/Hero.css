@@ -294,10 +294,17 @@
     width: 76%;
     line-break: anywhere;
   }
-  .Hero-section-icone{
+
+  .Hero-section-icone {
     font-size: 10px;
   }
-  .hero-social-icone-container{
+
+  .hero-social-icone-container {
     margin-left: -30vh;
   }
+}
+@media(max-width:1219px){
+.Hero-section-img-contant{
+
+}
 }
