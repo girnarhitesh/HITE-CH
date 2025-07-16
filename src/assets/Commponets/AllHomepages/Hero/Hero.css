@@ -129,6 +129,7 @@
     opacity: 0;
     transform: translate(-50%, -40%);
   }
+
   100% {
     opacity: 1;
     transform: translate(-50%, -50%);
@@ -138,7 +139,8 @@
 .Hero-section-img-contant {
   position: absolute;
   top: 50%;
-  left: 27%; /* This will need adjustment */
+  left: 27%;
+  /* This will need adjustment */
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 700px;
@@ -160,7 +162,8 @@
 }
 
 .Hero-section-img-contant p {
-  width: 60vh; /* This will need adjustment */
+  width: 60vh;
+  /* This will need adjustment */
   font-size: 18px;
   line-height: 30px;
 }
@@ -202,38 +205,52 @@
 
 
 @media (max-width: 900px) {
+
   /* Adjusting general layout for smaller screens */
   .hero-content {
-    flex-direction: column; /* Stack content and visual vertically */
-    text-align: center; /* Center-align text when stacked */
-    padding: 30px 20px; /* Reduce padding for smaller screens */
-    gap: 40px; /* Increase gap between stacked items */
+    flex-direction: column;
+    /* Stack content and visual vertically */
+    text-align: center;
+    /* Center-align text when stacked */
+    padding: 30px 20px;
+    /* Reduce padding for smaller screens */
+    gap: 40px;
+    /* Increase gap between stacked items */
   }
 
   .sectionpadding {
-    flex: 1 1 100%; /* Allow content to take full width */
-    max-width: 100%; /* Ensure it doesn't overflow */
+    flex: 1 1 100%;
+    /* Allow content to take full width */
+    max-width: 100%;
+    /* Ensure it doesn't overflow */
   }
 
   .hero-visual {
-    flex: 1 1 100%; /* Allow visual to take full width */
-    order: -1; /* Place visual before content for better mobile presentation */
-    margin-bottom: 20px; /* Add space below the visual */
+    flex: 1 1 100%;
+    /* Allow visual to take full width */
+    order: -1;
+    /* Place visual before content for better mobile presentation */
+    margin-bottom: 20px;
+    /* Add space below the visual */
   }
 
   .hero-image {
-    width: 60vh; /* Adjust image size, still relative to viewport height */
-    height: 60vh; /* Adjust image size */
+    width: 60vh;
+    /* Adjust image size, still relative to viewport height */
+    height: 60vh;
+    /* Adjust image size */
   }
 
   /* Adjusting text sizes for readability */
   .hero-title {
-    font-size: 2.5rem; /* Reduce title font size */
+    font-size: 2.5rem;
+    /* Reduce title font size */
     margin-bottom: 15px;
   }
 
   .hero-description {
-    font-size: 1rem; /* Slightly reduce description font size */
+    font-size: 1rem;
+    /* Slightly reduce description font size */
     line-height: 1.6;
   }
 
@@ -243,78 +260,115 @@
 
   /* Adjusting stats and buttons */
   .hero-stats {
-    flex-direction: column; /* Stack stats vertically */
-    gap: 20px; /* Reduce gap between stacked stats */
+    flex-direction: column;
+    /* Stack stats vertically */
+    gap: 20px;
+    /* Reduce gap between stacked stats */
     margin: 20px 0;
   }
 
   .stat-item {
-    text-align: center; /* Center-align stat items */
+    text-align: center;
+    /* Center-align stat items */
   }
 
   .stat-number {
-    font-size: 1.8rem; /* Reduce stat number font size */
+    font-size: 1.8rem;
+    /* Reduce stat number font size */
   }
 
   .stat-label {
-    font-size: 0.9rem; /* Reduce stat label font size */
+    font-size: 0.9rem;
+    /* Reduce stat label font size */
+  }
+  .hero-img-section{
+    position: relative;
   }
 
   .hero-buttons {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 15px; /* Reduce gap between stacked buttons */
+    flex-direction: column;
+    /* Stack buttons vertically */
+    gap: 15px;
+    /* Reduce gap between stacked buttons */
   }
 
   .btn-primary,
   .btn-secondary {
-    width: 100%; /* Make buttons full width */
-    box-sizing: border-box; /* Include padding and border in width */
-    padding: 10px 20px; /* Adjust button padding */
-    font-size: 0.95rem; /* Slightly reduce button font size */
+    width: 100%;
+    /* Make buttons full width */
+    box-sizing: border-box;
+    /* Include padding and border in width */
+    padding: 10px 20px;
+    /* Adjust button padding */
+    font-size: 0.95rem;
+    /* Slightly reduce button font size */
   }
 
   /* Adjustments for the full-width video/image section */
   .hero-video {
-    height: 60vh; /* Reduce video height on smaller screens */
+    height: 60vh;
+    /* Reduce video height on smaller screens */
   }
 
   .Hero-section-img-contant {
-    left: 50%; /* Center the content horizontally */
-    text-align: center; /* Center the text inside this section */
-    max-width: 90%; /* Allow content to use more width */
-    padding: 0 20px; /* Add some horizontal padding */
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 700px;
+    color: #fff;
+    text-align: justify;
+    line-break: anywhere;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-out forwards;
+    animation-delay: .3s;
   }
 
   .Hero-section-img-contant h1 {
-    font-size: 2.5rem; /* Reduce heading font size */
+    font-size: 2.5rem;
+    /* Reduce heading font size */
     line-height: 1.2;
   }
 
   .Hero-section-img-contant p {
-    width: auto; /* Allow paragraph to take full available width */
-    font-size: 16px; /* Reduce paragraph font size */
+    width: auto;
+    /* Allow paragraph to take full available width */
+    font-size: 16px;
+    /* Reduce paragraph font size */
     line-height: 26px;
-    margin: 0 auto; /* Center the paragraph if it's narrower than its container */
+    margin: 0 auto;
+    /* Center the paragraph if it's narrower than its container */
   }
 
   .hero-social-icone-container {
-    top: auto; /* Reset top position */
-    bottom: 20px; /* Position at the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for perfect centering */
-    width: 100%; /* Take full width for centering child */
+    top: auto;
+    /* Reset top position */
+    bottom: 20px;
+    /* Position at the bottom */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Adjust for perfect centering */
+    width: 100%;
+    /* Take full width for centering child */
     display: flex;
-    justify-content: center; /* Center the icons themselves */
+    justify-content: center;
+    /* Center the icons themselves */
   }
 
   .Hero-section-icone {
-    gap: 15px; /* Adjust gap between social icons */
+    gap: 15px;
+    /* Adjust gap between social icons */
   }
 
   .hero-icone {
-    width: 5vh; /* Slightly reduce icon size */
+    width: 5vh;
+    /* Slightly reduce icon size */
     height: 5vh;
-    font-size: 18px; /* Adjust icon font size */
-    padding: 10px; /* Adjust padding */
+    font-size: 18px;
+    /* Adjust icon font size */
+    padding: 10px;
+    /* Adjust padding */
   }
 }
