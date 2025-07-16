@@ -92,11 +92,11 @@ const Hero = () => {
                                         We are  <span className="hero-title-highlight">Hitech</span>
                                     </h1>
 
-                                    {/* <div className="hero-description">
+                                    <div className="hero-description">
                                         <p>Since its inception in 1996, Hitech has been a cornerstone in Ahmedabad's construction industry. With certifications like ISO 9001:2015 and ISO 45001, we set the bar high for quality and safety. Our portfolio is diverse, covering industrial constructions, residential developments, commercial properties and institutional buildings.</p>
                                         <br />
                                         <p>We are honored to be classified as a 'AA' special category - I (Buildings) contractor by the Government of Gujarat. Our mission is to create enduring partnerships and transformative projects that stand as testaments to our commitment to excellence. We believe in not just building structures, but also in building relationships and communities.</p>
-                                    </div> */}
+                                    </div>
 
                                     <div className="hero-buttons">
                                         <a href="#" className="btn-primary">Our Projects</a>
