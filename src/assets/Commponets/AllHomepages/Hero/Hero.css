@@ -157,11 +157,12 @@
   margin-bottom: 1rem;
   line-height: 1.3;
   letter-spacing: 1px;
+  width: 100%;
   font-family: "Oswald", sans-serif;
 }
 
 .Hero-section-img-contant p {
-  width: 60vh;
+  /* width: 60vh; */
   font-size: 18px;
   line-height: 30px;
 }
