@@ -297,7 +297,7 @@
 
   .Hero-section-img-contant p {
     font-size: 20px;
-    margin-left: 17vh;
+    /* margin-left: 17vh; */
     width: 76%;
     line-break: anywhere;
   }
