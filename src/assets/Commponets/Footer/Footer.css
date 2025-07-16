@@ -163,3 +163,9 @@
         justify-content: center; /* Center social icons on small screens */
     }
 }
+@media(max-width:900px){
+    .Footer-Row{
+        display: flex;
+        flex-direction: column;
+    }
+}
