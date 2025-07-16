@@ -100,7 +100,7 @@ const Hero = () => {
 
                                         <div className="hero-buttons">
                                             <a href="/services" className="btn-primary">Services</a>
-                                            <a href="/contact" className="btn-secondary">Contact</a>
+                                            <a href="/contact " className="btn-secondary">Contact</a>
                                         </div>
                                     </div>
                                 </div>
