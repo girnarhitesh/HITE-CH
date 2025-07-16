@@ -300,7 +300,7 @@
   }
 
   .hero-social-icone-container {
-    margin-left: -30vh;
+   text-align: center;
   }
 }
 @media(max-width:1219px){
