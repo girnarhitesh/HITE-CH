@@ -285,12 +285,12 @@
   .Hero-section-img-contant h1 {
     font-size: 25px;
     width: 68%;
-    margin-left: 15vh;
+    margin-left: 13vh;
   }
 
   .Hero-section-img-contant p {
     font-size: 20px;
-    margin-left: 15vh;
+    margin-left: 13vh;
     width: 76%;
     line-break: anywhere;
   }
@@ -299,12 +299,5 @@
     font-size: 10px;
   }
 
-  .hero-social-icone-container {
-   text-align: center;
-  }
-}
-@media(max-width:1219px){
-.Hero-section-img-contant{
-margin-left: 9vh;
-}
+
 }
