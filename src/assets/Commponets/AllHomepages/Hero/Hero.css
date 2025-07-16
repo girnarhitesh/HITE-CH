@@ -292,7 +292,7 @@
   .Hero-section-img-contant h1 {
     font-size: 25px;
     width: 68%;
-    margin-left: 17vh;
+    /* margin-left: 17vh; */
   }
 
   p {
