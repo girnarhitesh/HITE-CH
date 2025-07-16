@@ -308,5 +308,9 @@
   .Hero-section-img-contant {
     margin-left: 17vh !important;
   }
-
+}
+@media(max-width:1219px){
+  .Hero-section-img-contant{
+    margin-left: 8vh;
+  }
 }
