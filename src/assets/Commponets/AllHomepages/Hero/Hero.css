@@ -271,8 +271,12 @@
   }
 
   .btn-primary {
-    height:7vh;
+    height: 7vh;
     width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-section-contant {
@@ -290,7 +294,7 @@
     margin-left: 17vh;
   }
 
-   p {
+  p {
     font-size: 20px;
     margin-left: 17vh;
     width: 76%;
@@ -300,7 +304,8 @@
   .Hero-section-icone {
     font-size: 10px;
   }
-  .Hero-section-img-contant{
+
+  .Hero-section-img-contant {
     margin-left: 17vh !important;
   }
 
