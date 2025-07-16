@@ -288,7 +288,7 @@
   .Hero-section-img-contant h1 {
     font-size: 25px;
     width: 68%;
-    margin-left: 17vh;
+    margin-left: 17vh !important;
   }
 
   .Hero-section-img-contant p {
@@ -302,5 +302,12 @@
     font-size: 10px;
   }
 
-
+}
+@media(max-width:1219px){
+    .Hero-section-img-contant h1{
+      margin-left: 8vh !important;
+    }
+    .Hero-section-img-contant p{
+      margin-left: 8vh !important;
+    }
 }
