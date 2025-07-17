@@ -53,6 +53,6 @@ body {
 }
 @media(max-width:900px){
   .sectionpadding{
-    padding: 2rem 2rem;
+    padding: 1rem;
   }
 }
