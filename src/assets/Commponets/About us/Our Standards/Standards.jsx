@@ -123,7 +123,7 @@ const Standards = () => {
                                 </div>
                             </div>
                             <div class="image-gallery">
-                                <div class="image-item">
+                                <div class="image-item-standers">
                                     <img src="https://www.hitechprojects.co.in/Sources/images/standards/Quality/1.%20On%20site%20checking.jpg" alt="Construction quality 1" />
                                     <div class="image-overlay"></div>
                                 </div>

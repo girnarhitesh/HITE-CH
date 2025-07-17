@@ -379,12 +379,13 @@
         line-height: 1.6;
     }
 
-    .image-item img {
-        height: 160px;
-    }
-
     .formwork-badge {
         font-size: 12px;
         padding: 6px 16px;
+    }
+}
+@media(max-width:900px){
+    .image-item img{
+        width: 100%;
     }
 }
