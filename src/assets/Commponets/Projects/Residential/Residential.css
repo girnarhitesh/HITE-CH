@@ -87,6 +87,9 @@
     background-color: #0D2E61;
     color: white;
 }
+.ant-image {
+    width: 100%;
+}
 @media(max-width:900px){
     .residenial-col{
         display: flex;
@@ -103,5 +106,8 @@
     width: 17vh;
     letter-spacing: 1px;
     border-radius: none;
+}
+.ant-image {
+    width: 100%;
 }
 }
