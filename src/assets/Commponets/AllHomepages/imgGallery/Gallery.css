@@ -238,5 +238,8 @@
         display: flex;
         font-size: 25px;
     }
+    .value-custom-button{
+        width: 27vh;
+    }
 
 }
