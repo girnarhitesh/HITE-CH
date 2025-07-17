@@ -162,7 +162,7 @@ function Gallery() {
 
             <section >
                 {/* <div className="sectionpadding"> */}
-                <div style={{ padding: "40px 0" }}>
+                <div>
                     <div className="contant-section-container">
                         <div className="contact-container">
                             <p>Looking to Partner with Us?</p>
