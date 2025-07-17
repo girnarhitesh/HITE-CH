@@ -116,6 +116,9 @@
     border-radius: 5px;
     object-fit: cover;
 }
+.ant-image{
+    width: 100%;
+}
 
   
 }
