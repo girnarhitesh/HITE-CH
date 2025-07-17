@@ -31,7 +31,7 @@ function Footer() {
                                 <li><a href="/residential">Residential</a></li>
                                 <li><a href="/commercial">Commercial</a></li>
                                 <li><a href="/industrial">Industrial</a></li>
-                                <li><a href="/institutional-corporate">Institutional & Corporate</a></li>
+                                <li><a href="/institutional">Institutional & Corporate</a></li>
                             </ul>
                         </div>
                     </Col>
