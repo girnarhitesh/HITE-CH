@@ -3,16 +3,6 @@
 
 }
 
-.residential-filter-buttons button {
-    background: #002244;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
 .residential-card {
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -102,4 +92,16 @@
         display: flex;
         flex-direction: column;
     }
+   .residential-filter-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0D2E61;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    height: 5vh;
+    width: 17vh;
+    letter-spacing: 1px;
+    border-radius: none;
+}
 }
