@@ -130,4 +130,7 @@
     .testomonial-sectio-container h1{
         font-size: 25px;
     }
+    .clients-section-header{
+        margin-top: 3vh;
+    }
 }
