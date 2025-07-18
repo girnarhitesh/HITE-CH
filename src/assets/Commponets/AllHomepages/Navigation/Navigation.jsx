@@ -60,29 +60,26 @@ function Navigation() {
                 {/* Navigation Menu */}
                 <ul className={`nav-menu ${isMenuOpen ? 'nav-menu-active' : ''}`}>
                     {Navigationitem.map((item, index) => (
-    <li key={index} className="nav-item">
-        <div
-            className="nav-link"
-            onClick={() => handleDropdownToggle(index)}
-        >
-            {item.title}
-            {item.sublink && item.sublink.length > 0 && (
-                <span className="dropdown-arrow">▼</span>
-            )}
-        </div>
-        {item.sublink && item.sublink.length > 0 && (
-            <ul className={`dropdown ${openDropdown === index ? 'show' : ''}`}>
-                {item.sublink.map((sub, subIndex) => (
-                    <li key={subIndex} className="dropdown-item">
-                        <a href={sub.link} className="dropdown-link">
-                            {sub.label}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-        )}
-    </li>
-))}
+                        <li key={index} className="nav-item">
+                            <a href={item.link} className="nav-link">
+                                {item.title}
+                                {item.sublink && item.sublink.length > 0 && (
+                                    <span className="dropdown-arrow">▼</span>
+                                )}
+                            </a>
+                            {item.sublink && item.sublink.length > 0 && (
+                                <ul className="dropdown">
+                                    {item.sublink.map((sub, subIndex) => (
+                                        <li key={subIndex} className="dropdown-item">
+                                            <a href={sub.link} className="dropdown-link">
+                                                {sub.label}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </li>
+                    ))}
                 </ul>
 
                 {/* Get Quote Button */}
