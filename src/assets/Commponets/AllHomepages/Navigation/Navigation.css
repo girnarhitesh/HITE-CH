@@ -388,3 +388,17 @@ padding: 0 46px;
         padding: 15px 30px;
     }
 }
+@media(max-width:900px){
+    .dropdown {
+    display: none;
+    flex-direction: column;
+}
+
+.dropdown.show {
+    display: flex;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+}
