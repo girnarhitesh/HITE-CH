@@ -228,7 +228,7 @@
 
 .hamburger-active .bar:nth-child(1) {
     transform: rotate(45deg) translate(6px, 6px);
-    background: #f39c12;
+    background: #052942;
 }
 
 .hamburger-active .bar:nth-child(2) {
@@ -238,7 +238,7 @@
 
 .hamburger-active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
-    background: #f39c12;
+    background: #052942;
 }
 
 /* Mobile Styles */
