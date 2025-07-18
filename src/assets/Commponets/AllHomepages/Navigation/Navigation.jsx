@@ -85,8 +85,8 @@ function Navigation() {
                 <ul className={`nav-menu ${isMenuOpen ? 'nav-menu-active' : ''}`}>
                     {navigationItems.map((item, index) => (
                         <li key={index} className="nav-item">
-                            <a 
-                                href="#" 
+                            <a
+                                href="#"
                                 className="nav-link"
                                 onClick={(e) => {
                                     e.preventDefault();
@@ -104,8 +104,8 @@ function Navigation() {
                                 <ul className={`dropdown ${activeDropdown === index ? 'dropdown-active' : ''}`}>
                                     {item.sublink.map((sub, subIndex) => (
                                         <li key={subIndex} className="dropdown-item">
-                                            <a 
-                                                href={sub.link} 
+                                            <a
+                                                href={sub.link}
                                                 className="dropdown-link"
                                                 onClick={() => {
                                                     setIsMenuOpen(false);
@@ -123,7 +123,7 @@ function Navigation() {
                 </ul>
 
                 {/* Hamburger Menu */}
-                <div 
+                <div
                     className={`hamburger ${isMenuOpen ? 'hamburger-active' : ''}`}
                     onClick={toggleMenu}
                     aria-label="Toggle navigation menu"

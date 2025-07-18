@@ -106,7 +106,7 @@
 
 .nav-link:hover {
     background: rgba(243, 156, 18, 0.1);
-    color: #f39c12;
+    color: #052942;
     transform: translateY(-1px);
 }
 
@@ -176,8 +176,8 @@
 
 .dropdown-link:hover {
     background: rgba(243, 156, 18, 0.1);
-    color: #f39c12;
-    border-left: 3px solid #f39c12;
+    color: #052942;
+    border-left: 3px solid #052942;
     transform: translateX(5px);
 }
 
@@ -188,7 +188,7 @@
 }
 
 .quote-btn {
-    background: linear-gradient(45deg, #f39c12, #e67e22);
+    background: #052942;
     color: white;
     padding: 12px 24px;
     border-radius: 25px;
