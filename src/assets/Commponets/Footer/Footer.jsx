@@ -58,12 +58,12 @@ function Footer() {
                                 <p><PhoneOutlined className="contact-icon" /> +91-9904592200 / +91-9904288000</p>
                                 <p><MailOutlined className="contact-icon" /> info@hitechprojects.co.in</p>
                             </div>
-                            <div className="footer-social-icons">
+                            {/* <div className="footer-social-icons">
                                 <a href="https://www.linkedin.com/company/hitechprojects/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
                                 <a href="https://www.facebook.com/hitechpplofficial/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
                                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
                                 <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="footer-section footer-certifications">
