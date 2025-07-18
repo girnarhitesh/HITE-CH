@@ -72,19 +72,11 @@ function Navigation() {
     return (
         <nav className="navbar">
             <div className="nav-container">
-                {/* Professional Logo */}
+
                 <div className="nav-logo">
                     <a href="/" className="logo-link">
                         <div className="logo-container">
-                            <svg 
-                                className="logo-icon" 
-                                fill="currentColor" 
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path d="M12 2L2 7v10c0 5.55 3.84 9.739 9 11 5.16-1.261 9-5.45 9-11V7l-10-5z"/>
-                                <path d="M12 7L7.5 9.5v5L12 17l4.5-2.5v-5L12 7z"/>
-                            </svg>
+                            <img src="https://www.hitechprojects.co.in/static/media/hitech_logo.441af66c973ea5b6921a.png" alt="" />
                             <div className="logo-text">
                                 <span className="brand-name">BUILDPRO</span>
                                 {/* <span className="brand-tagline">Building Excellence</span> */}
