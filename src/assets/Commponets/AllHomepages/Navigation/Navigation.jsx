@@ -61,17 +61,14 @@ function Navigation() {
                 <ul className={`nav-menu ${isMenuOpen ? 'nav-menu-active' : ''}`}>
                     {Navigationitem.map((item, index) => (
                         <li key={index} className="nav-item">
-                            <div
-                                className="nav-link"
-                                onClick={() => handleDropdownToggle(index)}
-                            >
+                            <a href={item.link} className="nav-link">
                                 {item.title}
                                 {item.sublink && item.sublink.length > 0 && (
                                     <span className="dropdown-arrow">▼</span>
                                 )}
-                            </div>
+                            </a>
                             {item.sublink && item.sublink.length > 0 && (
-                                <ul className={`dropdown ${openDropdown === index ? 'show' : ''}`}>
+                                <ul className="dropdown">
                                     {item.sublink.map((sub, subIndex) => (
                                         <li key={subIndex} className="dropdown-item">
                                             <a href={sub.link} className="dropdown-link">
