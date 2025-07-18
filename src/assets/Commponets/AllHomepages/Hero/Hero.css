@@ -92,6 +92,9 @@
   transition: all 0.3s ease;
   letter-spacing: 1px;
   width: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-primary {
