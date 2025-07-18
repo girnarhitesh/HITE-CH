@@ -77,10 +77,6 @@ function Navigation() {
                     <a href="/" className="logo-link">
                         <div className="logo-container">
                             <img src="https://www.hitechprojects.co.in/static/media/hitech_logo.441af66c973ea5b6921a.png" alt="" />
-                            <div className="logo-text">
-                                <span className="brand-name">BUILDPRO</span>
-                                {/* <span className="brand-tagline">Building Excellence</span> */}
-                            </div>
                         </div>
                     </a>
                 </div>
@@ -125,13 +121,6 @@ function Navigation() {
                         </li>
                     ))}
                 </ul>
-
-                {/* Get Quote Button */}
-                <div className="nav-actions">
-                    <a href="/contact" className="quote-btn">
-                        Get Quote
-                    </a>
-                </div>
 
                 {/* Hamburger Menu */}
                 <div 
