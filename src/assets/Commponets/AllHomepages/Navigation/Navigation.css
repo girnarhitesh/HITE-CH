@@ -238,9 +238,7 @@
     transform: rotate(-45deg) translate(6px, -6px);
     background: #052942;
 }
- .ant-image-mask {
-    width: 100%;
-}
+
 /* Mobile Styles */
 @media screen and (max-width: 1024px) {
     .nav-container {
