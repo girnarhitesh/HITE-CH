@@ -10,8 +10,7 @@ function Loding() {
             '.loader-logo',
             { y: 50, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.8, ease: 'power2.out' }
-        )
-        .to('.loader-container', {
+        ).to('.loader-container', {
             y: '-100%',
             duration: 1,
             delay: 0.5,

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navigation from './assets/Commponets/AllHomepages/Navigation/Navigation';
+import Navigation from './components/Navigation';
 import AllHomepage from './assets/Commponets/AllHomepages/AllHomepage';
 import Client from './assets/Commponets/ Our Clients/Clients/Client';
 import Architect from './assets/Commponets/ Our Clients/Architect/Architect';
@@ -19,13 +19,30 @@ import Industrial from './assets/Commponets/Projects/Industrial/Industrial';
 import Institutional from './assets/Commponets/Projects/Institutional/institutional';
 import Services from './assets/Commponets/Services/Services';
 import Footer from './assets/Commponets/Footer/Footer';
-import Loding from './assets/Commponets/Loding';
+import Loding from './components/Loding';
 
 function App() {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // show loader for 2 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <BrowserRouter>
-      <Loding />
-      <Navigation />
+      {isLoading ? (
+        <Loding />
+      ) : (
+        <>
+          <Navigation />
+          {/* <Routes> your pages here </Routes> */}
+        </>
+      )}
       <Routes>
         <Route path="/" element={<AllHomepage />} />
         <Route path='/client' element={<Client />} />
