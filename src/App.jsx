@@ -19,10 +19,12 @@ import Industrial from './assets/Commponets/Projects/Industrial/Industrial';
 import Institutional from './assets/Commponets/Projects/Institutional/institutional';
 import Services from './assets/Commponets/Services/Services';
 import Footer from './assets/Commponets/Footer/Footer';
+import Loding from './assets/Commponets/Loding';
 
 function App() {
   return (
     <BrowserRouter>
+      <Loding />
       <Navigation />
       <Routes>
         <Route path="/" element={<AllHomepage />} />
@@ -34,15 +36,15 @@ function App() {
         <Route path='/whoweare' element={<Whoweare />} />
         <Route path='/standards' element={<Standards />} />
         <Route path='/machinery' element={<Machinery />} />
-        <Route path='/formwork' element={<Formwork/>}/>
-        <Route path='/technology' element={<Tecnology/>}/>
-        <Route path='/residential' element={<Residential/>}/>
-        <Route path='/commercial' element={<Commercial/>}/>
-        <Route path='industrial' element={<Industrial/>}/>
-        <Route path='/institutional' element={<Institutional/>}/>
-        <Route path='/services' element={<Services/>}/>
+        <Route path='/formwork' element={<Formwork />} />
+        <Route path='/technology' element={<Tecnology />} />
+        <Route path='/residential' element={<Residential />} />
+        <Route path='/commercial' element={<Commercial />} />
+        <Route path='industrial' element={<Industrial />} />
+        <Route path='/institutional' element={<Institutional />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 }
