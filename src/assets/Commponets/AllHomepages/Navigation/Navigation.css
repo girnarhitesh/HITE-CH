@@ -130,6 +130,7 @@
     visibility: hidden;
     transform: translateY(15px);
     transition: all 0.3s ease;
+    padding: 10px 0;
     list-style: none;
     z-index: 1001;
     font-family: Raleway, sans-serif;
