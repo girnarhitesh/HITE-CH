@@ -125,17 +125,16 @@
     top: 100%;
     left: 0;
     background: white;
-    min-width: 280px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     opacity: 0;
     visibility: hidden;
     transform: translateY(15px);
     transition: all 0.3s ease;
     list-style: none;
-    padding: 15px 0;
     z-index: 1001;
     font-family: Raleway, sans-serif;
     border-radius: 8px;
+    width: 30vh;
 }
 
 .dropdown::before {
