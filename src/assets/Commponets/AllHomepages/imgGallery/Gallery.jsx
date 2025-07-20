@@ -144,7 +144,7 @@ function Gallery() {
                                             <h3 className="value-name">{item.name}</h3>
                                             <p className="value-description-gallery">{item.description}</p>
 
-                                            {item.button && ( 
+                                            {item.button && (
                                                 <Link to={item.path}>
                                                     <button className="value-custom-button">
                                                         {item.button}
@@ -167,8 +167,11 @@ function Gallery() {
                         <div className="contact-container">
                             <p>Looking to Partner with Us?</p>
                             <div className="contact-button">
-                                <Link><button>Contact us</button></Link>
+                                <Link to="/contact">
+                                    <button>Contact us</button>
+                                </Link>
                             </div>
+
                         </div>
                     </div>
                 </div>
