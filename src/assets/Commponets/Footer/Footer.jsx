@@ -15,7 +15,7 @@ function Footer() {
                             <h3 className="footer-heading">Quick Links</h3>
                             <ul className="footer-links">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/whoweare">About Us</a></li>
                                 <li><a href="/services">Services</a></li>
                                 <li><a href="/careers">Careers</a></li>
                                 <li><a href="/contact">Contact Us</a></li>
