@@ -9,7 +9,7 @@ function Footer() {
     return (
         <footer className="app-footer">
             <div className="section-padding">
-                <Row className='Footer-Row'> 
+                <Row className='Footer-Row'>
                     <Col xs={24} sm={12} md={6} lg={6}>
                         <div className="footer-section">
                             <h3 className="footer-heading">Quick Links</h3>
@@ -23,7 +23,7 @@ function Footer() {
                         </div>
                     </Col>
 
-   
+
                     <Col xs={24} sm={12} md={6} lg={6}>
                         <div className="footer-section">
                             <h3 className="footer-heading footer-heading-hidden">&nbsp;</h3>
@@ -40,16 +40,23 @@ function Footer() {
                     <Col xs={24} sm={12} md={6} lg={6}>
                         <div className="footer-section">
                             <h3 className="footer-heading">Address</h3>
-                            <p className="footer-address">
-                                Hitech Projects Pvt. Ltd. <br />
-                                A-1401, Block-A, <br />
-                                West Gate Business Bay, <br />
-                                Besides Signature - 1, S.G. Highway, <br />
-                                Makarba, Ahmedabad - 380051. <br />
-                                Gujarat, India
-                            </p>
+                            <a
+                                href="https://www.google.com/maps/place/Hitech+Projects+Private+Limited/@22.9975806,72.4969546,17z/data=!3m1!4b1!4m5!3m4!1s0x395e9b475ef7e48d:0x922a96c8de37de3a!8m2!3d22.9975739!4d72.4991428"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <p className="footer-address">
+                                    Hitech Projects Pvt. Ltd. <br />
+                                    A-1401, Block-A, <br />
+                                    West Gate Business Bay, <br />
+                                    Besides Signature - 1, S.G. Highway, <br />
+                                    Makarba, Ahmedabad - 380051. <br />
+                                    Gujarat, India
+                                </p>
+                            </a>
                         </div>
                     </Col>
+
 
                     <Col xs={24} sm={12} md={6} lg={6}>
                         <div className="footer-section">
@@ -78,7 +85,7 @@ function Footer() {
             </div>
 
             <div className="footer-bottom">
-              <p>&copy;2022 <Link to="https://www.outleadsolutions.com/" target='https://www.outleadsolutions.com/'>Outlead solution.</Link> All rights reserved</p>
+                <p>&copy;2022 <Link to="https://www.outleadsolutions.com/" target='https://www.outleadsolutions.com/'>Outlead solution.</Link> All rights reserved</p>
             </div>
         </footer>
     );
