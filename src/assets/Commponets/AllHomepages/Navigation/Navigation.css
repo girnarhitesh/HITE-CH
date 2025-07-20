@@ -255,7 +255,138 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
 
+    
+    .nav-actions {
+        display: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background: linear-gradient(135deg, #1a365d 0%, #2d5a7a 100%);
+        width: 100%;
+        height: calc(100vh - 80px);
+        text-align: center;
+        transition: 0.4s ease;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.1);
+        padding: 30px 0;
+        gap: 0;
+        overflow-y: auto;
+    }
+
+    .nav-menu-active {
+        left: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-link {
+        padding: 25px 20px;
+        justify-content: center;
+        border-radius: 0;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .nav-link::before {
+        display: none;
+    }
+
+    .dropdown {
+        position: static;
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: none;
+        border-radius: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: none;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        min-width: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .dropdown-active {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+        width: 100%;
+    }
+
+    .dropdown::before {
+        display: none;
+    }
+
+    .dropdown-link {
+        color: rgba(255, 255, 255, 0.9);
+        padding: 18px 40px;
+        font-size: 1rem;
+        border-left: none;
+        text-align: center;
+    }
+
+    .dropdown-link:hover {
+        background: rgba(243, 156, 18, 0.2);
+        color: #f39c12;
+        transform: none;
+    }
+
+    .nav-item:hover .dropdown-arrow {
+        transform: rotate(0deg);
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-container {
+        padding: 0 15px;
+        height: 70px;
+    }
+
+    .nav-menu {
+        top: 70px;
+        height: calc(100vh - 70px);
+        padding: 20px 0;
+    }
+
+    .logo-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .brand-name {
+        font-size: 1.1rem;
+    }
+
+    .hamburger {
+        width: 25px;
+        height: 20px;
+    }
+
+    .nav-link {
+        padding: 20px 15px;
+    }
+
+    .dropdown-link {
+        padding: 15px 30px;
+    }
+}
 @media(max-width:900px){
     dropdown-active{
         width: 100%;
