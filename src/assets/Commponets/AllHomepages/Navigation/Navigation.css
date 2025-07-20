@@ -322,7 +322,7 @@
     .dropdown-active {
         opacity: 1;
         visibility: visible;
-        height: 500px;
+        max-height: 500px;
         width: 100%;
     }
 
