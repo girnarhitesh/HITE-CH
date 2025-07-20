@@ -27,6 +27,7 @@
     font-weight: bold;
 }
 
+
 .footer-heading::after {
     content: '';
     position: absolute;
