@@ -19,6 +19,7 @@ import Industrial from './assets/Commponets/Projects/Industrial/Industrial';
 import Institutional from './assets/Commponets/Projects/Institutional/institutional';
 import Services from './assets/Commponets/Services/Services';
 import Footer from './assets/Commponets/Footer/Footer';
+import Contact from './assets/Commponets/Contact/Contact';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path='industrial' element={<Industrial/>}/>
         <Route path='/institutional' element={<Institutional/>}/>
         <Route path='/services' element={<Services/>}/>
+        <Route path='contact' element={<Contact/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
