@@ -29,6 +29,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Show button if scroll position is greater than 1000px
       setShowButton(window.scrollY > 1000);
     };
 
@@ -50,7 +51,7 @@ function App() {
         <Route path="/" element={<AllHomepage />} />
         <Route path='/client' element={<Client />} />
         <Route path='/architects' element={<Architect />} />
-        <Route path='csr' element={<CSR />} />
+        <Route path='/csr' element={<CSR />} />
         <Route path='/awards' element={<Awords />} />
         <Route path='/management' element={<Managment />} />
         <Route path='/whoweare' element={<Whoweare />} />
@@ -60,18 +61,19 @@ function App() {
         <Route path='/technology' element={<Tecnology />} />
         <Route path='/residential' element={<Residential />} />
         <Route path='/commercial' element={<Commercial />} />
-        <Route path='industrial' element={<Industrial />} />
+        <Route path='/industrial' element={<Industrial />} />
         <Route path='/institutional' element={<Institutional />} />
         <Route path='/services' element={<Services />} />
-        <Route path='contact' element={<Contact />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
 
-      showButton && (
-      <div className="back-to-top" onClick={scrollToTop}>
-        <MdOutlineVerticalAlignTop size={30} />
-      </div>
-      )
+      {/* Corrected placement for conditional rendering */}
+      {showButton && (
+        <div className="back-to-top" onClick={scrollToTop}>
+          <MdOutlineVerticalAlignTop size={30} />
+        </div>
+      )}
     </BrowserRouter>
   );
 }
