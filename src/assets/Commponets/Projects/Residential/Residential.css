@@ -68,6 +68,7 @@
     width: 15vh;
     letter-spacing: 1px;
     border-radius: none;
+    color: white;
 }
 
 .ant-image-preview-switch-right {
