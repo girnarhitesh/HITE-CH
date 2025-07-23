@@ -204,6 +204,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
+    flex-wrap: wrap;
 }
 
 .contact-container-hero-section p {
