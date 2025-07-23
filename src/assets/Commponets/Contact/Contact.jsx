@@ -39,22 +39,27 @@ function Contact() {
                     {/* Contact Info */}
                     <div className="contact-info">
                         <div className="info-card">
-                            <div className="info-icon"><IoLocationOutline/></div>
-                            <Link>
-                                <p>
-                                    Hitech Projects Limited.
-                                    A-1401, Block-A,
-                                    West Gate Business Bay,
-                                    Besides Signature - 1, S.G. Highway,
-                                    Makarba, Ahmedabad - 380051.
-                                    Gujarat, India
-                                </p>
-                            </Link>
+                            <div className="info-icon"><IoLocationOutline /></div>
+                            <a
+                                href="https://www.google.com/maps?q=Hitech+Projects+Limited,+West+Gate+Business+Bay,+Ahmedabad"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="footer-link"
+                            >
+                                <address className='address-contant'>
+                                    Hitech Projects Limited.<br />
+                                    A-1401, Block-A,<br />
+                                    West Gate Business Bay,<br />
+                                    Besides Signature - 1, S.G. Highway,<br />
+                                    Makarba, Ahmedabad - 380051.<br />
+                                    Gujarat, India,
+                                </address>
+                            </a>
                         </div>
                         <div className="info-card">
                             <div className="info-icon">📞</div>
                             <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
+                            <Link to=""><p>+1 (555) 123-4567</p></Link>
                         </div>
                         <div className="info-card">
                             <div className="info-icon">✉️</div>
