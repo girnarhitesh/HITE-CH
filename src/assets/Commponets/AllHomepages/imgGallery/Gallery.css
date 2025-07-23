@@ -192,7 +192,7 @@
     transform: translateY(0);
 }
 
-.contant-section-container {
+.ccontact-container-hero-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,12 +206,12 @@
     background-blend-mode: multiply;
 }
 
-.contant-section-container p {
+.contact-container-hero-section p {
     color: #fff;
     font-size: 25px;
 }
 
-.contact-button button {
+.contact-button-hero button {
     width: 20vh;
     height: 5vh;
     margin-top: 2vh;

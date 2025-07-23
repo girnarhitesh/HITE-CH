@@ -164,9 +164,9 @@ function Gallery() {
                 {/* <div className="sectionpadding"> */}
                 <div>
                     <div className="contant-section-container">
-                        <div className="contact-container">
+                        <div className="contact-container-hero-section">
                             <p>Looking to Partner with Us?</p>
-                            <div className="contact-button">
+                            <div className="contact-button-hero">
                                 <Link to="/contact">
                                     <button>Contact us</button>
                                 </Link>
