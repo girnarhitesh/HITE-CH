@@ -158,9 +158,7 @@
         left: 50%;
         transform: translateX(-50%); /* Center underline */
     }
-    .footer-links, .footer-address, .footer-contact-info, .footer-cert-list {
-        text-align: center; /* Center text on small screens */
-    }
+   
     .footer-links a::before {
         display: none; /* Hide arrows on very small screens if desired */
     }
