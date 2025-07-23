@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       // Show button if scroll position is greater than 1000px
-      setShowButton(window.scrollY > 1000);
+      setShowButton(window.scrollY > 100);
     };
 
     window.addEventListener('scroll', handleScroll);
