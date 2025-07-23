@@ -24,6 +24,12 @@
     margin-bottom: 30px;
     color: #fff;
 }
+.contact-container-page p{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 .contact-form {
     display: flex;
