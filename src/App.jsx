@@ -25,14 +25,23 @@ import Contact from './assets/Commponets/Contact/Contact';
 
 function App() {
 
-  useEffect(() => {
-  const handleScroll = () => {
-    setShowButton(window.scrollY > 9600); // 100 meters
-  };
+  const [showButton, setShowButton] = useState(false);
 
-  window.addEventListener('scroll', handleScroll);
-  return () => window.removeEventListener('scroll', handleScroll);
-}, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY > 1000);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <BrowserRouter>
