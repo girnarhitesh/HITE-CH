@@ -193,9 +193,9 @@
 }
 
 .contact-container-hero-section {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     text-align: center;
     background-color: #0D2E61;
     height: 30vh;
