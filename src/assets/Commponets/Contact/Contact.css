@@ -6,11 +6,11 @@
 
 .contact-container {
     max-width: 700px;
-    margin-top: 10vh;
-    background: white;
+    /* margin-top: 10vh; */
+    /* background: white; */
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px; */
+    /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); */
 }
 
 .contact-container h2 {
