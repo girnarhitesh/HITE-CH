@@ -172,5 +172,7 @@
     .Footer-Row{
         display: flex;
         flex-direction: column;
+        text-align: justify;
+        align-items: baseline;
     }
 }
