@@ -3,7 +3,7 @@ import { Row, Col } from 'antd';
 import { MailOutlined, PhoneOutlined } from '@ant-design/icons'; // For icons
 import { FaLinkedinIn, FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa'; // For social media icons
 import './Footer.css'; // Import the CSS file
-import Link from 'antd/es/typography/Link';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -62,9 +62,14 @@ function Footer() {
                         <div className="footer-section">
                             <h3 className="footer-heading">Contact Us</h3>
                             <div className="footer-contact-info">
-                                <p><PhoneOutlined className="contact-icon" /> +91-9904592200 / +91-9904288000</p>
-                                <p><MailOutlined className="contact-icon" /> info@hitechprojects.co.in</p>
+                                <a href="tel:+919904592200" className="footer-link">
+                                    <PhoneOutlined className="contact-icon" /> +91-9904592200 / +91-9904288000
+                                </a>
+                                <a href="mailto:info@hitechprojects.co.in" className="footer-link">
+                                    <MailOutlined className="contact-icon" /> info@hitechprojects.co.in
+                                </a>
                             </div>
+
                             {/* <div className="footer-social-icons">
                                 <a href="https://www.linkedin.com/company/hitechprojects/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
                                 <a href="https://www.facebook.com/hitechpplofficial/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>

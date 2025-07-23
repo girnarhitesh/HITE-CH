@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Contact.css"
+import { Link } from 'react-router-dom';
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -32,7 +33,7 @@ function Contact() {
                     <h2>Contact Us</h2>
                     <p>Let's build something amazing together. Reach out today.</p>
                 </div>
-                
+
                 <div className="contact-content">
                     {/* Contact Info */}
                     <div className="contact-info">
@@ -49,7 +50,9 @@ function Contact() {
                         <div className="info-card">
                             <div className="info-icon">✉️</div>
                             <h4>Email</h4>
-                            <p>hello@company.com</p>
+                            <Link to="/">
+                                <p>info@hitechprojects.co.in</p>
+                            </Link>
                         </div>
                     </div>
 
@@ -163,7 +166,7 @@ function Contact() {
                 </div>
             </div>
 
-           
+
         </div>
     );
 }
