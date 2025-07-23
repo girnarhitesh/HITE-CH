@@ -193,9 +193,10 @@
 }
 
 .contact-container-hero-section {
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
     background-color: #0D2E61;
     height: 30vh;
@@ -204,7 +205,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    flex-wrap: wrap;
 }
 
 .contact-container-hero-section p {
