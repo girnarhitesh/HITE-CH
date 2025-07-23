@@ -244,4 +244,18 @@
     .section-container-icon p{
         width: 100%;
     }
+
+.value-card-ourvalue {
+    width: 50vh;
+    height: auto;
+    max-width: 100%;
+    /* margin: 0 auto; */
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+}
 }
