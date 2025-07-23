@@ -1,31 +1,32 @@
  .contact-section {
-     padding: 80px 20px;
-     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+     /* padding: 80px 20px; */
+     background:#0a2460;
      min-height: 100vh;
      display: flex;
      align-items: center;
      justify-content: center;
+     margin-top: 8vh;
  }
 
  .contact-container {
-     max-width: 900px;
+     /* max-width: 900px; */
      width: 100%;
      background: white;
-     border-radius: 20px;
-     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+     /* border-radius: 20px; */
+     /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1); */
      overflow: hidden;
  }
 
  .contact-header {
-     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-     color: white;
-     padding: 50px 40px;
+     /* background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); */
+     /* color: white; */
+     padding: 30px 0;
      text-align: center;
  }
 
  .contact-header h2 {
      font-size: 2.5rem;
-     margin-bottom: 15px;
+     /* margin-bottom: 15px; */
      font-weight: 700;
      letter-spacing: -0.5px;
  }
@@ -45,11 +46,12 @@
  }
 
  .contact-info {
-     background: #f8f9fa;
+     /* background: #f8f9fa; */
      padding: 40px 30px;
      display: flex;
      flex-direction: column;
      gap: 30px;
+     margin-top: -12vh;
  }
 
  .info-card {
@@ -85,13 +87,13 @@
  }
 
  .contact-form-wrapper {
-     padding: 40px;
+     padding: 20px;
  }
 
  .contact-form {
      display: flex;
      flex-direction: column;
-     gap: 25px;
+     gap: 15px;
  }
 
  .form-row {
@@ -123,12 +125,13 @@
  .form-group input,
  .form-group textarea {
      padding: 15px 18px;
-     font-size: 1rem;
+     font-size: 0.8rem;
      border: 2px solid #e9ecef;
      border-radius: 10px;
      transition: all 0.3s ease;
      font-family: inherit;
      background: #fafbfc;
+     letter-spacing: 1px;
  }
 
  .form-group input:focus,
@@ -158,9 +161,9 @@
      font-size: 1.1rem;
      font-weight: 600;
      border: none;
-     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+     background: #0a2460;
      color: white;
-     border-radius: 50px;
+     /* border-radius: 50px; */
      cursor: pointer;
      transition: all 0.3s ease;
      text-transform: uppercase;

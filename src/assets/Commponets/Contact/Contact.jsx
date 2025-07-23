@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "./Contact.css"
 import { Link } from 'react-router-dom';
+import { IoLocationOutline } from "react-icons/io5";
+
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -31,16 +33,23 @@ function Contact() {
             <div className="contact-container">
                 <div className="contact-header">
                     <h2>Contact Us</h2>
-                    <p>Let's build something amazing together. Reach out today.</p>
                 </div>
 
                 <div className="contact-content">
                     {/* Contact Info */}
                     <div className="contact-info">
                         <div className="info-card">
-                            <div className="info-icon">📍</div>
-                            <h4>Address</h4>
-                            <p>123 Business Street<br />New York, NY 10001</p>
+                            <div className="info-icon"><IoLocationOutline/></div>
+                            <Link>
+                                <p>
+                                    Hitech Projects Limited.
+                                    A-1401, Block-A,
+                                    West Gate Business Bay,
+                                    Besides Signature - 1, S.G. Highway,
+                                    Makarba, Ahmedabad - 380051.
+                                    Gujarat, India
+                                </p>
+                            </Link>
                         </div>
                         <div className="info-card">
                             <div className="info-icon">📞</div>
@@ -104,7 +113,7 @@ function Contact() {
                                         />
                                     </div>
                                 </div>
-                                <div className="form-col">
+                                {/* <div className="form-col">
                                     <div className="form-group">
                                         <label htmlFor="company">Company</label>
                                         <input
@@ -116,10 +125,10 @@ function Contact() {
                                             placeholder="Your company name"
                                         />
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
 
-                            <div className="form-row">
+                            {/* <div className="form-row">
                                 <div className="form-col full-width">
                                     <div className="form-group">
                                         <label htmlFor="subject">Subject *</label>
@@ -134,7 +143,7 @@ function Contact() {
                                         />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="form-row">
                                 <div className="form-col full-width">
@@ -147,7 +156,7 @@ function Contact() {
                                             onChange={handleChange}
                                             required
                                             rows="5"
-                                            placeholder="Tell us more about your project or inquiry..."
+                                            placeholder="message"
                                         ></textarea>
                                     </div>
                                 </div>

@@ -60,6 +60,7 @@
     transition: color 0.3s ease;
     display: flex; 
     align-items: center;
+    letter-spacing: 1px;
 }
 
 .footer-links a::before {
@@ -80,7 +81,10 @@
     font-size: 0.95em;
     line-height: 1.6;
 }
-
+.footer-contact-info{
+    line-height: 20px;
+    letter-spacing: 1px;
+}
 
 .footer-contact-info p {
     font-size: 0.95em;

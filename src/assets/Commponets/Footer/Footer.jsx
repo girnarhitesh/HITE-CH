@@ -62,9 +62,10 @@ function Footer() {
                         <div className="footer-section">
                             <h3 className="footer-heading">Contact Us</h3>
                             <div className="footer-contact-info">
-                                <a href="tel:+919904592200" className="footer-link">
+                                <a href="tel:+919904592200" className="footer-link" style={{marginBottom:"2vh"}}>
                                     <PhoneOutlined className="contact-icon" /> +91-9904592200 / +91-9904288000
                                 </a>
+                                <br />
                                 <a href="mailto:info@hitechprojects.co.in" className="footer-link">
                                     <MailOutlined className="contact-icon" /> info@hitechprojects.co.in
                                 </a>
