@@ -32,7 +32,7 @@ const Hero = () => {
                 <Col lg={12} md={16} sm={24}>
                     <div className="Hero-section-img-contant-section">
                         <div className="hero-img-section">
-                            {/* <video
+                            <video
                                 className="hero-video"
                                 src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/WxYFwhO/videoblocks-con1structiontl_uhd_hap0wnqgf__c94b2bb542c6e86f88d666efc09a8db1__P360.mp4"
                                 autoPlay
@@ -40,7 +40,7 @@ const Hero = () => {
                                 muted
                                 playsInline
                             ></video>
-                        </div> */}
+                        </div>
 
                         <div className="Hero-section-img-contant">
                             <motion.h1
