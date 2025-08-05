@@ -75,7 +75,7 @@ function Testimonial() {
                                         <div style={styles.avatar}>
                                             {item.avatar}
                                         </div>
-                                        <div style={styles.clientInfo}>
+                                        <div key={index}  style={styles.clientInfo}>
                                             <h3 style={styles.clientName}>{item.name}</h3>
                                             <p style={styles.clientPosition}>{item.position}</p>
                                         </div>
