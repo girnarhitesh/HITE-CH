@@ -1,3 +1,4 @@
+import { text } from 'framer-motion/client';
 import React from 'react';
 
 function Testimonial() {
@@ -47,17 +48,17 @@ function Testimonial() {
 
     return (
         <section style={styles.section}>
-            <div style={styles.sectionPadding}>
+            <div className='sectionpadding'>
                 <div style={styles.container}>
                     <div style={styles.headerContainer}>
                         <div style={styles.titleWrapper}>
-                            <span style={styles.subtitle}>What Our Clients Say</span>
+                            {/* <span style={styles.subtitle}>What Our Clients Say</span> */}
                             <h1 style={styles.title}>Testimonials</h1>
                             <div style={styles.titleUnderline}></div>
                         </div>
-                        <p style={styles.description}>
+                        {/* <p style={styles.description}>
                             Discover why leading construction companies and developers trust us with their most important projects.
-                        </p>
+                        </p> */}
                     </div>
 
                     <div style={styles.testimonialsGrid}>
@@ -75,7 +76,7 @@ function Testimonial() {
                                         <div style={styles.avatar}>
                                             {item.avatar}
                                         </div>
-                                        <div key={index}  style={styles.clientInfo}>
+                                        <div key={index} style={styles.clientInfo}>
                                             <h3 style={styles.clientName}>{item.name}</h3>
                                             <p style={styles.clientPosition}>{item.position}</p>
                                         </div>
@@ -108,7 +109,7 @@ function Testimonial() {
                     </div>
 
                     {/* Stats Section */}
-                    <div style={styles.statsSection}>
+                    {/* <div style={styles.statsSection}>
                         <div style={styles.statItem}>
                             <div style={styles.statNumber}>500+</div>
                             <div style={styles.statLabel}>Happy Clients</div>
@@ -125,7 +126,7 @@ function Testimonial() {
                             <div style={styles.statNumber}>99%</div>
                             <div style={styles.statLabel}>Client Satisfaction</div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
@@ -139,15 +140,7 @@ const styles = {
         position: 'relative',
         overflow: 'hidden'
     },
-    sectionPadding: {
-        padding: '80px 20px',
-        position: 'relative',
-        zIndex: 2
-    },
-    container: {
-        maxWidth: '1200px',
-        margin: '0 auto'
-    },
+
     headerContainer: {
         textAlign: 'center',
         marginBottom: '60px'
@@ -170,14 +163,17 @@ const styles = {
         color: 'white',
         margin: '0 0 20px 0',
         textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
-        fontFamily: "'Georgia', serif"
+        fontFamily: "'Georgia', serif",
+        // display:"flex"
+        
     },
     titleUnderline: {
         width: '100px',
         height: '4px',
         background: 'linear-gradient(90deg, #ffd700, #ffed4e)',
         margin: '0 auto',
-        borderRadius: '2px'
+        borderRadius: '2px',
+              
     },
     description: {
         fontSize: '18px',
@@ -188,14 +184,14 @@ const styles = {
     },
     testimonialsGrid: {
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+        // gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
         gap: '25px',
         marginBottom: '60px'
     },
     testimonialCard: {
         backgroundColor: 'white',
         borderRadius: '20px',
-        padding: '30px',
+        padding: '10px',
         boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
         cursor: 'pointer',
         transition: 'all 0.3s ease',
@@ -259,7 +255,8 @@ const styles = {
         fontSize: '20px',
         fontWeight: 'bold',
         transition: 'transform 0.3s ease',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        textAlign:"center"
     },
     contentWrapper: {
         transition: 'all 0.5s ease',
@@ -322,10 +319,10 @@ const styles = {
 
 
 // Add the media queries to the document
-if (typeof document !== 'undefined') {
-    const style = document.createElement('style');
-    style.textContent = mediaQueries;
-    document.head.appendChild(style);
-}
+// if (typeof document !== 'undefined') {
+//     const style = document.createElement('style');
+//     style.textContent = mediaQueries;
+//     document.head.appendChild(style);
+// }
 
 export default Testimonial;
