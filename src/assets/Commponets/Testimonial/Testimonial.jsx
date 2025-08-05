@@ -165,7 +165,7 @@ const styles = {
         textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
         fontFamily: "'Georgia', serif",
         // display:"flex"
-        
+
     },
     titleUnderline: {
         width: '100px',
@@ -173,7 +173,7 @@ const styles = {
         background: 'linear-gradient(90deg, #ffd700, #ffed4e)',
         margin: '0 auto',
         borderRadius: '2px',
-              
+
     },
     description: {
         fontSize: '18px',
@@ -256,7 +256,7 @@ const styles = {
         fontWeight: 'bold',
         transition: 'transform 0.3s ease',
         cursor: 'pointer',
-        textAlign:"center"
+        textAlign: "center"
     },
     contentWrapper: {
         transition: 'all 0.5s ease',
