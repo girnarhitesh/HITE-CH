@@ -1,3 +1,4 @@
+import { color } from 'framer-motion';
 import { text } from 'framer-motion/client';
 import React from 'react';
 
@@ -73,9 +74,9 @@ function Testimonial() {
                             >
                                 <div style={styles.cardHeader}>
                                     <div style={styles.avatarSection}>
-                                        <div style={styles.avatar}>
+                                        {/* <div style={styles.avatar}>
                                             {item.avatar}
-                                        </div>
+                                        </div> */}
                                         <div key={index} style={styles.clientInfo}>
                                             <h3 style={styles.clientName}>{item.name}</h3>
                                             <p style={styles.clientPosition}>{item.position}</p>
@@ -98,11 +99,11 @@ function Testimonial() {
                                     <p style={styles.testimonialContent}>
                                         {item.content}
                                     </p>
-                                    <div style={styles.rating}>
+                                    {/* <div style={styles.rating}>
                                         {[...Array(5)].map((_, i) => (
                                             <span key={i} style={styles.star}>★</span>
                                         ))}
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         ))}
@@ -135,7 +136,7 @@ function Testimonial() {
 
 const styles = {
     section: {
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        // background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
         minHeight: '100vh',
         position: 'relative',
         overflow: 'hidden'
@@ -145,9 +146,9 @@ const styles = {
         textAlign: 'center',
         marginBottom: '60px'
     },
-    titleWrapper: {
-        marginBottom: '20px'
-    },
+    // titleWrapper: {
+    //     marginBottom: '20px'
+    // },
     subtitle: {
         fontSize: '16px',
         color: 'rgba(255, 255, 255, 0.8)',
@@ -161,9 +162,9 @@ const styles = {
         fontSize: '48px',
         fontWeight: 'bold',
         color: 'white',
-        margin: '0 0 20px 0',
-        textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
-        fontFamily: "'Georgia', serif",
+        // margin: '0 0 20px 0',
+        color: '#0D2E61',
+        fontfamily: "Titillium Web",
         // display:"flex"
 
     },
@@ -191,7 +192,7 @@ const styles = {
     testimonialCard: {
         backgroundColor: 'white',
         borderRadius: '20px',
-        padding: '10px',
+        padding: '10px 3rem',
         boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
         cursor: 'pointer',
         transition: 'all 0.3s ease',
@@ -241,13 +242,13 @@ const styles = {
         fontSize: '14px',
         color: '#666',
         margin: 0,
-        fontStyle: 'italic'
+        // fontStyle: 'italic'
     },
     expandIcon: {
         width: '35px',
         height: '35px',
         borderRadius: '50%',
-        background: 'linear-gradient(135deg, #667eea, #764ba2)',
+        // background: 'linear-gradient(135deg, #667eea, #764ba2)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -256,7 +257,8 @@ const styles = {
         fontWeight: 'bold',
         transition: 'transform 0.3s ease',
         cursor: 'pointer',
-        textAlign: "center"
+        textAlign: "center",
+        backgroundColor: '#0D2E61'
     },
     contentWrapper: {
         transition: 'all 0.5s ease',
@@ -268,14 +270,16 @@ const styles = {
         fontFamily: 'Georgia, serif',
         lineHeight: '1',
         marginBottom: '15px',
-        opacity: 0.3
+        opacity: 0.3,
+        letterSpacing: '1px'
     },
     testimonialContent: {
         fontSize: '16px',
         lineHeight: '1.7',
         color: '#4a5568',
         marginBottom: '20px',
-        fontStyle: 'italic'
+        letterSpacing: '1px'
+        // fontStyle: 'italic'
     },
     rating: {
         display: 'flex',
@@ -304,6 +308,7 @@ const styles = {
         fontWeight: 'bold',
         color: 'white',
         marginBottom: '10px',
+        letterSpacing: '1px',
         textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
     },
     statLabel: {
